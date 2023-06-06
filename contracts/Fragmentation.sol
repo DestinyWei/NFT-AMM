@@ -9,7 +9,7 @@ pragma solidity ^0.8.17;
 contract Fragmentation {
     uint constant ONE_ETH = 10 ** 18;
     mapping(address => mapping(address => mapping(uint => bool)))
-        public nft_StakeIndex; //useraddress nftaddress tokenid
+    public nft_StakeIndex; //useraddress nftaddress tokenid
 
     mapping(address => bool) public isFTCreated; //相关系列的nft是否被create
 
