@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-//import "./lptoken.sol";
 import "./interfaces/ILPToken.sol";
 //import "./IERC20.sol";
 import "./LPToken.sol";
@@ -10,17 +9,15 @@ import "./interfaces/ICalculate.sol";
 pragma solidity ^0.8.17;
 
 contract NFTAMM {
-    //全局变量
-
     uint constant ONE_ETH = 10 ** 18;
-    mapping(address => address) pairCreator; //lpAddr pairCreator
+    mapping(address => address) pairCreator; // LPAddr pairCreator
 
-    address[] public lpTokenAddressList; //lptoken的数组
+    address[] public lpTokenAddressList; // LPToken的数组
     address[] public rewardTokenAddressList;
 
-    mapping(address => mapping(address => uint)) reserve; //第一个address是lptoken的address ，第2个是相应token的资产，uint是资产的amount
+    mapping(address => mapping(address => uint)) reserve; // LPTokenAddress => 相应token的资产 => 资产的amount
 
-    //检索lptoken
+    // 检索LPToken
     mapping(address => mapping(address => address)) findLpToken;
     mapping(address => mapping(address => address)) findRewardToken;
 
@@ -54,8 +51,8 @@ contract NFTAMM {
         _reEntrancyMutex = false;
     }
 
-    //业务合约
-    //添加流动性
+    // 业务合约
+    // 添加流动性
 
     function addLiquidityWithETH(
         address _token,
@@ -65,7 +62,7 @@ contract NFTAMM {
         address user = msg.sender;
         // address addr = address(this);
         WETH.depositETH{value: ETHAmount}();
-        //WETH.approve(user,ETHAmount);
+        // WETH.approve(user,ETHAmount);
         WETH.transfer(user, ETHAmount);
         addLiquidity(WETHAddr, _token, ETHAmount, _tokenAmount);
     }
@@ -76,7 +73,7 @@ contract NFTAMM {
         uint _amount0,
         uint _amount1
     ) public {
-        //ILPToken lptoken;//lptoken接口，为了mint 和 burn lptoken
+        // ILPToken lptoken; // lptoken接口，为了mint 和 burn lptoken
 
         address user = msg.sender;
         require(_amount0 > 0, "require _amount0 > 0 && _amount1 >0");
@@ -113,14 +110,14 @@ contract NFTAMM {
             IERC20 token1 = IERC20(_token1);
             token1.transferFrom(user, address(this), _amount1);
 
-            //当lptoken = 0时，创建lptoken
-            //shares = _sqrt(_amount0 * _amount1);
+            // 当lptoken = 0时，创建lptoken
+            // shares = _sqrt(_amount0 * _amount1);
 
-            //lptokenAddr = findLpToken[_token1][_token0];
-            //rewardTokenAddr = findRewardToken[_token1][_token0];
+            // lptokenAddr = findLpToken[_token1][_token0];
+            // rewardTokenAddr = findRewardToken[_token1][_token0];
 
-            //lptoken = ILPToken(findLpToken[_token1][_token0]);//实例化为调用mint方法
-            //rewardToken = ILPToken(findRewardToken[_token1][_token0]);
+            // lptoken = ILPToken(findLpToken[_token1][_token0]);//实例化为调用mint方法
+            // rewardToken = ILPToken(findRewardToken[_token1][_token0]);
             _creatpairLogic(_token0, _token1, _amount0, _amount1, user);
         } else {
             _amount1 =
@@ -132,11 +129,11 @@ contract NFTAMM {
 
             _pairCreatedLogic(_token0, _token1, _amount0, _amount1, user);
 
-            //获取lptoken地址
+            // 获取lptoken地址
         }
-        //require(shares > 0, "shares = 0");
+        // require(shares > 0, "shares = 0");
 
-        //lptoken.mint(msg.sender,shares);
+        // lptoken.mint(msg.sender,shares);
 
         _update(
             findLpToken[_token1][_token0],
@@ -162,11 +159,11 @@ contract NFTAMM {
         lptoken = ILPToken(createPair(_token0, _token1));
         rewardToken = ILPToken(createRewardToken(_token0, _token1));
 
-        //lptokenAddr = findLpToken[_token1][_token0];
-        //rewardTokenAddr = findRewardToken[_token1][_token0];
+        // lptokenAddr = findLpToken[_token1][_token0];
+        // rewardTokenAddr = findRewardToken[_token1][_token0];
 
-        //lptoken = ILPToken(findLpToken[_token1][_token0]);//实例化为调用mint方法
-        //rewardToken = ILPToken(findRewardToken[_token1][_token0]);
+        // lptoken = ILPToken(findLpToken[_token1][_token0]);//实例化为调用mint方法
+        // rewardToken = ILPToken(findRewardToken[_token1][_token0]);
 
         pairCreator[findLpToken[_token1][_token0]] = msg.sender; //保留最后的流动性
 
@@ -186,14 +183,14 @@ contract NFTAMM {
     ) internal {
         ILPToken rewardToken;
         ILPToken lptoken;
-        //获取lptoken地址
+        // 获取lptoken地址
         address lptokenAddr = findLpToken[_token1][_token0];
 
         uint shares = _min(
             (_amount0 * lptoken.totalSupply()) / reserve[lptokenAddr][_token0],
             (_amount1 * lptoken.totalSupply()) / reserve[lptokenAddr][_token1]
         );
-        //lptoken = ILPToken(lptokenAddr);//获取lptoken地址
+        // lptoken = ILPToken(lptokenAddr); // 获取lptoken地址
         rewardToken = ILPToken(findRewardToken[_token1][_token0]);
         lptoken = ILPToken(lptokenAddr);
 
@@ -205,7 +202,7 @@ contract NFTAMM {
                 _amount0
             )
         );
-        //获取lptoken地址
+        // 获取lptoken地址
     }
 
     function addLiquidity(
@@ -214,7 +211,7 @@ contract NFTAMM {
         uint _amount0,
         uint _amount1
     ) public returns (uint shares) {
-        ILPToken lptoken; //lptoken接口，为了mint 和 burn lptoken
+        ILPToken lptoken; // LPToken接口，为了mint和burn lptoken
 
         require(_amount0 > 0, "require _amount0 > 0 && _amount1 >0");
         require(_token0 != _token1, "_token0 == _token1");
@@ -250,28 +247,28 @@ contract NFTAMM {
                 reserve[lptokenAddr][_token0];
             IERC20 token1 = IERC20(_token1);
             token1.transferFrom(msg.sender, address(this), _amount1);
-            //require(reserve0[lptokenAddr][_token0] * _amount1 == reserve1[lptokenAddr][_token1] * _amount0, "x / y != dx / dy");
-            //必须保持等比例添加，添加后k值会改变
+            // require(reserve0[lptokenAddr][_token0] * _amount1 == reserve1[lptokenAddr][_token1] * _amount0, "x / y != dx / dy");
+            // 必须保持等比例添加，添加后k值会改变
         }
 
         if (findLpToken[_token1][_token0] == address(0)) {
-            //当lptoken = 0时，创建lptoken
+            // 当lptoken = 0时，创建lptoken
             shares = _sqrt(_amount0 * _amount1);
             createPair(_token0, _token1);
             lptokenAddr = findLpToken[_token1][_token0];
-            lptoken = ILPToken(lptokenAddr); //获取lptoken地址
+            lptoken = ILPToken(lptokenAddr); // 获取lptoken地址
             pairCreator[lptokenAddr] = msg.sender;
             IERC20 token1 = IERC20(_token1);
             token1.transferFrom(msg.sender, address(this), _amount1);
         } else {
-            lptoken = ILPToken(lptokenAddr); //获取lptoken地址
+            lptoken = ILPToken(lptokenAddr); // 获取lptoken地址
             shares = _min(
                 (_amount0 * lptoken.totalSupply()) /
                     reserve[lptokenAddr][_token0],
                 (_amount1 * lptoken.totalSupply()) /
                     reserve[lptokenAddr][_token1]
             );
-            //获取lptoken地址
+            // 获取lptoken地址
         }
         require(shares > 0, "shares = 0");
         lptoken.mint(msg.sender, shares);
@@ -285,14 +282,14 @@ contract NFTAMM {
         );
     }
 
-    //移除流动性
+    // 移除流动性
 
     function removeLiquidity(
         address _token0,
         address _token1,
         uint _shares
     ) external returns (uint amount0, uint amount1) {
-        ILPToken lptoken; //lptoken接口，为了mint 和 burn lptoken
+        ILPToken lptoken; // lptoken接口，为了mint和burn lptoken
         IERC20 token0 = IERC20(_token0);
         IERC20 token1 = IERC20(_token1);
         address lptokenAddr = findLpToken[_token0][_token1];
@@ -308,7 +305,7 @@ contract NFTAMM {
 
         amount0 =
             (_shares * reserve[lptokenAddr][_token0]) /
-            lptoken.totalSupply(); //share * totalsuply/bal0
+            lptoken.totalSupply(); // share * totalsuply / bal0
         amount1 =
             (_shares * reserve[lptokenAddr][_token1]) /
             lptoken.totalSupply();
@@ -327,7 +324,7 @@ contract NFTAMM {
         token1.transfer(msg.sender, amount1);
     }
 
-    //交易
+    // 交易
 
     function swapWithETH(
         address _tokenOut,
@@ -394,12 +391,12 @@ contract NFTAMM {
             (reserveOut * amountInWithFee) /
             (reserveIn + amountInWithFee);
 
-        //(输出的token总数量 * 输入的token数量) / (输入token的总数量 + 输入的token数量)
+        // (输出的token总数量 * 输入的token数量) / (输入token的总数量 + 输入的token数量)
         // 比如有1000输出token，200输入token，用户输入50token，
-        //则 (1000 * 50)/(200 + 50) = 200
-        //原价1000 ：200 是 5 ：1
-        //输出对比是 200 ：50 是 4 ：1
-        //出现这个结果就是滑点问题
+        // 则 (1000 * 50)/(200 + 50) = 200
+        // 原价1000 ：200 是 5 ：1
+        // 输出对比是 200 ：50 是 4 ：1
+        // 出现这个结果就是滑点问题
 
         /*
         比如100000token1，20000token0，用户输入50token0
@@ -416,7 +413,7 @@ contract NFTAMM {
         _update(lptokenAddr, _tokenIn, _tokenOut, totalReserve0, totalReserve1);
     }
 
-    //交易携带滑点限制
+    // 交易携带滑点限制
     function swapByLimitSli(
         address _tokenIn,
         address _tokenOut,
@@ -444,7 +441,7 @@ contract NFTAMM {
             (reserveOut * amountInWithFee) /
             (reserveIn + amountInWithFee);
 
-        //检查滑点
+        // 检查滑点
         setSli(amountInWithFee, reserveIn, reserveOut, _disirSli);
 
         tokenOut.transfer(msg.sender, amountOut);
@@ -454,7 +451,7 @@ contract NFTAMM {
         _update(lptokenAddr, _tokenIn, _tokenOut, totalReserve0, totalReserve1);
     }
 
-    //暴露数据查询方法
+    // 暴露数据查询方法
 
     function getReserve(
         address _lpTokenAddr,
@@ -492,8 +489,8 @@ contract NFTAMM {
         return lpTokenAddressList.length;
     }
 
-    //依赖方法
-    //creatpair
+    // 依赖方法
+    // creatpair
 
     function createPair(
         address addrToken0,
@@ -503,7 +500,7 @@ contract NFTAMM {
         new LPToken{salt: bytes32(_salt)}();
         address lptokenAddr = getAddress(getBytecode(), _salt);
 
-        //检索lptoken
+        // 检索lptoken
         lpTokenAddressList.push(lptokenAddr);
         findLpToken[addrToken0][addrToken1] = lptokenAddr;
         findLpToken[addrToken1][addrToken0] = lptokenAddr;
@@ -521,7 +518,7 @@ contract NFTAMM {
         new LPToken{salt: bytes32(_salt)}();
         address rewardTokenAddr = getAddress(getBytecode(), _salt);
 
-        //检索lptoken
+        // 检索lptoken
         rewardTokenAddressList.push(rewardTokenAddr);
         findRewardToken[addrToken0][addrToken1] = rewardTokenAddr;
         findRewardToken[addrToken1][addrToken0] = rewardTokenAddr;
@@ -550,7 +547,7 @@ contract NFTAMM {
         return address(uint160(uint(hash)));
     }
 
-    //数据更新
+    // 数据更新
 
     function _update(
         address lptokenAddr,
@@ -563,7 +560,7 @@ contract NFTAMM {
         reserve[lptokenAddr][_token1] = _reserve1;
     }
 
-    //数学库
+    // 数学库
 
     function _sqrt(uint y) private pure returns (uint z) {
         if (y > 3) {

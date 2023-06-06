@@ -9,15 +9,19 @@ pragma solidity ^0.8.17;
 contract Fragmentation {
     uint constant ONE_ETH = 10 ** 18;
     mapping(address => mapping(address => mapping(uint => bool)))
+<<<<<<< HEAD
     public nft_StakeIndex; //useraddress nftaddress tokenid
+=======
+        public nft_StakeIndex; // UserAddress => NFTAddress => TokenId
+>>>>>>> 4f97d7e3d63454fa2a201128f41e92684e80c4c2
 
-    mapping(address => bool) public isFTCreated; //相关系列的nft是否被create
+    mapping(address => bool) public isFTCreated; // 相关系列的NFT是否被create
 
     address[] public FTAddressList;
-    mapping(address => address) public findFT;
+    mapping(address => address) public findFT; // NFTAddress => FTAddress
     mapping(address => bool) public isFTToken;
 
-    //碎片化NFT
+    // 碎片化NFT
     function tearApartNFT(address _nftAddr, uint _tokenId) public {
         IERC721 erc721 = IERC721(_nftAddr);
         FT ft;
@@ -31,7 +35,7 @@ contract Fragmentation {
         erc721.transferFrom(user, address(this), _tokenId);
         uint FTAmount = 1000 * ONE_ETH;
         if (!isFTCreated[_nftAddr]) {
-            //当lptoken = 0时，创建lptoken
+            // 当LPToken = 0时，创建LPToken
             address ftAddr = createFT(_nftAddr);
             ft = FT(ftAddr);
             nft_StakeIndex[user][_nftAddr][_tokenId] = true;
@@ -49,7 +53,7 @@ contract Fragmentation {
         address user = msg.sender;
         require(nft_StakeIndex[user][_nftAddr][_tokenId], "not NFT here");
         FT ft = FT(findFT[_nftAddr]);
-        //require(ft.balanceOf(user) >= 1000 * ONE_ETH, "NO enought FT");
+        // require(ft.balanceOf(user) >= 1000 * ONE_ETH, "NO enought FT");
         ft.burn(user, 1000 * ONE_ETH);
         IERC721 erc721 = IERC721(_nftAddr);
         erc721.transferFrom(address(this), user, _tokenId);
@@ -69,11 +73,10 @@ contract Fragmentation {
         new FT{salt: bytes32(_salt)}();
         address FTAddr = getAddress(getFTBytecode(), _salt);
 
-        //检索lptoken
+        // 检索LPToken
         FTAddressList.push(FTAddr);
-        //isFTCreated[FTAddr] = true;
+        isFTCreated[FTAddr] = true;
         findFT[_nftAddr] = FTAddr;
-        //findLpToken[addrToken0][addrToken1] = lptokenAddr;
 
         return FTAddr;
     }
