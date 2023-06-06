@@ -5,7 +5,11 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract fundContract is Initializable, AccessControlUpgradeable, UUPSUpgradeable {
+contract fundContract is
+    Initializable,
+    AccessControlUpgradeable,
+    UUPSUpgradeable
+{
     bytes32 public constant UPGRADER_ROLE = keccak256("UPGRADER_ROLE");
 
     /// @custom:oz-upgrades-unsafe-allow constructor
@@ -13,7 +17,7 @@ contract fundContract is Initializable, AccessControlUpgradeable, UUPSUpgradeabl
         _disableInitializers();
     }
 
-    function initialize() initializer public {
+    function initialize() public initializer {
         __AccessControl_init();
         __UUPSUpgradeable_init();
 
@@ -21,9 +25,7 @@ contract fundContract is Initializable, AccessControlUpgradeable, UUPSUpgradeabl
         _grantRole(UPGRADER_ROLE, msg.sender);
     }
 
-    function _authorizeUpgrade(address newImplementation)
-        internal
-        onlyRole(UPGRADER_ROLE)
-        override
-    {}
+    function _authorizeUpgrade(
+        address newImplementation
+    ) internal override onlyRole(UPGRADER_ROLE) {}
 }

@@ -9,8 +9,8 @@
 pragma solidity ^0.8;
 
 contract StakingRewards {
-    IERC20 public  stakingToken;
-    IERC20 public  rewardsToken;
+    IERC20 public stakingToken;
+    IERC20 public rewardsToken;
 
     address public owner;
 
@@ -72,10 +72,12 @@ contract StakingRewards {
             totalSupply;
     }
 
-    function resetToken(address _stakingToken, address _rewardToken) public onlyOwner{
+    function resetToken(
+        address _stakingToken,
+        address _rewardToken
+    ) public onlyOwner {
         stakingToken = IERC20(_stakingToken);
         rewardsToken = IERC20(_rewardToken);
-
     }
 
     function stake(uint _amount) external updateReward(msg.sender) {
@@ -106,11 +108,13 @@ contract StakingRewards {
             rewardsToken.transfer(msg.sender, reward);
         }
     }
+
     //设置可以挖矿的时间，单位s
     function setRewardsDuration(uint _duration) external onlyOwner {
         require(finishAt < block.timestamp, "reward duration not finished");
         duration = _duration;
     }
+
     //可获取的ERC20数量
     function notifyRewardAmount(
         uint _amount
@@ -144,7 +148,6 @@ contract StakingRewards {
         require(block.timestamp >= finishAt, "still product rewardToken");
         rewardsToken.transfer(msg.sender, getBalanceOfContract());
     }
-
 }
 
 interface IERC20 {
@@ -154,7 +157,10 @@ interface IERC20 {
 
     function transfer(address recipient, uint amount) external returns (bool);
 
-    function allowance(address owner, address spender) external view returns (uint);
+    function allowance(
+        address owner,
+        address spender
+    ) external view returns (uint);
 
     function approve(address spender, uint amount) external returns (bool);
 

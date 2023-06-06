@@ -11,8 +11,7 @@ contract FT is ERC20, Ownable {
         _mint(to, amount);
     }
 
-    function burn(address account, uint256 amount) public onlyOwner
-    {
-        _burn(account,amount);
+    function burn(address account, uint256 amount) public onlyOwner {
+        _burn(account, amount);
     }
 }
