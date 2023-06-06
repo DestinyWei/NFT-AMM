@@ -9,7 +9,7 @@ contract WETH is ERC20 {
     modifier reEntrancyMutex() {
         bool _reEntrancyMutex;
 
-        require(!_reEntrancyMutex, "FUCK");
+        require(!_reEntrancyMutex, "Have pending process");
         _reEntrancyMutex = true;
         _;
         _reEntrancyMutex = false;
