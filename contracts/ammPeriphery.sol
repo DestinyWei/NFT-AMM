@@ -33,7 +33,7 @@ contract Router {
         one_tokenB_price = (reserveA * ONE_ETH) / reserveB;
     }
 
-    function cacalTokenOutAmount(
+    function calculateTokenOutAmount(
         address _tokenIn,
         address _tokenOut,
         uint _tokenInAmount
@@ -47,7 +47,7 @@ contract Router {
             (reserveIn + _tokenInAmount);
     }
 
-    function cacalLpTokenAddAmount(
+    function calculateLpTokenAddAmount(
         address _tokenA,
         address _tokenB,
         uint _amountA

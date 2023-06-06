@@ -38,6 +38,8 @@ contract DexToken is
         _mint(to, amount);
     }
 
+    // The following functions are overrides required by Solidity.
+
     function _beforeTokenTransfer(
         address from,
         address to,
@@ -45,8 +47,6 @@ contract DexToken is
     ) internal override(ERC20, ERC20Snapshot) whenNotPaused {
         super._beforeTokenTransfer(from, to, amount);
     }
-
-    // The following functions are overrides required by Solidity.
 
     function _afterTokenTransfer(
         address from,

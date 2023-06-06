@@ -109,13 +109,13 @@ contract StakingRewards {
         }
     }
 
-    //设置可以挖矿的时间，单位s
+    // 设置可以挖矿的时间，单位s
     function setRewardsDuration(uint _duration) external onlyOwner {
         require(finishAt < block.timestamp, "reward duration not finished");
         duration = _duration;
     }
 
-    //可获取的ERC20数量
+    // 可获取的ERC20数量
     function notifyRewardAmount(
         uint _amount
     ) external onlyOwner updateReward(address(0)) {
