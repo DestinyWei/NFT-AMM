@@ -45,7 +45,7 @@ contract NFTAMM {
     modifier reEntrancyMutex() {
         bool _reEntrancyMutex;
 
-        require(!_reEntrancyMutex, "FUCK");
+        require(!_reEntrancyMutex, "Have pending process");
         _reEntrancyMutex = true;
         _;
         _reEntrancyMutex = false;
@@ -375,8 +375,8 @@ contract NFTAMM {
         /*
         How much dy for dx?
         xy = k
-        (交易后)(x + dx)(y - dy) = k 对于交易所的视角 k = xy(交易前) y -dy = xy/(x + dx) // dy = y - xy/(x + dx)
-        y - dy = k / (x + dx)           // = (y(x + dx)  - xy) / (x + dx) = ydx  / (x + dx)
+        (交易后)(x + dx)(y - dy) = k 对于交易所的视角 k = xy(交易前) y - dy = xy / (x + dx) // dy = y - xy / (x + dx)
+        y - dy = k / (x + dx)           // = (y(x + dx) - xy) / (x + dx) = ydx / (x + dx)
         y - k / (x + dx) = dy
         y - xy / (x + dx) = dy
         (yx + ydx - xy) / (x + dx) = dy
@@ -425,7 +425,7 @@ contract NFTAMM {
             "invalid token"
         );
         require(_amountIn > 0, "amount in = 0");
-        require(_tokenIn != _tokenOut);
+        require(_tokenIn != _tokenOut, "can't swap the same token");
         require(_amountIn >= 1000, "require amountIn >= 1000 wei token");
 
         IERC20 tokenIn = IERC20(_tokenIn);
@@ -436,6 +436,7 @@ contract NFTAMM {
 
         tokenIn.transferFrom(msg.sender, address(this), _amountIn);
 
+        // 0.3% fee
         uint amountInWithFee = (_amountIn * 997) / 1000;
         amountOut =
             (reserveOut * amountInWithFee) /
@@ -474,6 +475,7 @@ contract NFTAMM {
         return findRewardToken[_tokenA][_tokenB];
     }
 
+    // 查询user拥有的lptoken余额
     function lptokenTotalSupply(
         address _token0,
         address _token1,
