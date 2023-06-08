@@ -53,7 +53,7 @@ contract NFTAMM {
 
     // 业务合约
     // 添加流动性
-
+  
     function addLiquidityWithETH(
         address _token,
         uint _tokenAmount
@@ -120,6 +120,7 @@ contract NFTAMM {
             // rewardToken = ILPToken(findRewardToken[_token1][_token0]);
             _creatpairLogic(_token0, _token1, _amount0, _amount1, user);
         } else {
+            
             _amount1 =
                 (reserve[findLpToken[_token1][_token0]][_token1] * _amount0) /
                 reserve[findLpToken[_token1][_token0]][_token0];
