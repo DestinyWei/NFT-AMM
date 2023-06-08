@@ -9,7 +9,7 @@ import "./interfaces/ICalculate.sol";
 pragma solidity ^0.8.17;
 
 contract NFTAMM {
-    uint constant ONE_ETH = 10 ** 18;
+    uint public constant ONE_ETH = 10 ** 18;
     mapping(address => address) pairCreator; // LPAddr pairCreator
 
     address[] public lpTokenAddressList; // LPToken的数组
