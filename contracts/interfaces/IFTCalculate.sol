@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.17;
 
-interface ICalculate {
+interface IFTCalculate {
     function calculateRewardTokenAmount(
         uint _reserver,
         uint _addAmount

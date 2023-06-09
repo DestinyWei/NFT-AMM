@@ -26,7 +26,7 @@ contract NFTAMMTestBase is Test {
 
     uint256 public sepoliaFork;
     string public SEPOLIA_RPC_URL = vm.envString("SEPOLIA_RPC_URL");
-    uint256 public constant BLOCK_NUM = 3648429;
+    uint256 public constant BLOCK_NUM = 3648420;
 
     function setUp() public {
         sepoliaFork = vm.createSelectFork(SEPOLIA_RPC_URL, BLOCK_NUM);
