@@ -4,7 +4,7 @@ import "./interfaces/ILPToken.sol";
 import "./LPToken.sol";
 import "./interfaces/IWETH.sol";
 import "./interfaces/IFragmentation.sol";
-import "./interfaces/ICalculate.sol";
+import "./interfaces/IFTCalculate.sol";
 
 pragma solidity ^0.8.17;
 
@@ -21,22 +21,22 @@ contract NFTAMM {
     mapping(address => mapping(address => address)) findLpToken;
     mapping(address => mapping(address => address)) findRewardToken;
 
-    IWETH immutable WETH;
-    IFragmentation immutable framentation;
-    ICalculate immutable calculate;
-    address immutable WETHAddr;
-    address immutable fundContract;
+    IWETH public immutable WETH;
+    IFragmentation public immutable fragmentation;
+    IFTCalculate public immutable calculate;
+    address public immutable WETHAddr;
+    address public immutable fundContract;
 
     constructor(
         address _wethAddr,
-        address _framentation,
+        address _fragmentation,
         address _calculate,
         address _fundContract
     ) {
         WETH = IWETH(_wethAddr);
         WETHAddr = _wethAddr;
-        framentation = IFragmentation(_framentation);
-        calculate = ICalculate(_calculate);
+        fragmentation = IFragmentation(_fragmentation);
+        calculate = IFTCalculate(_calculate);
         fundContract = _fundContract;
     }
 
@@ -77,7 +77,7 @@ contract NFTAMM {
 
         address user = msg.sender;
         require(_amount0 > 0, "require _amount0 > 0 && _amount1 >0");
-        require(framentation.isFTToken(_token0), "not FT token");
+        require(fragmentation.isFTToken(_token0), "not FT token");
         require(_token0 != _token1, "_token0 == _token1");
         {
             IERC20 token0 = IERC20(_token0);
