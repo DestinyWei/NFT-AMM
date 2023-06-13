@@ -44,7 +44,7 @@ contract PoolTest is Test {
         assertEq(address(pool.rewardsToken()), address(rewardsToken));
     }
 
-    function test_P_lastTimeRewardApplicable() public {
+    function test_P_LastTimeRewardApplicable_Success() public {
         // set the variable value
         updateVariable();
 
@@ -56,7 +56,7 @@ contract PoolTest is Test {
         assertEq(time, pool.finishAt());
     }
 
-    function test_P_rewardPerToken() public {
+    function test_P_RewardPerToken_Success() public {
         uint256 perToken = pool.rewardPerToken();
         assertEq(perToken, 0);
 
@@ -67,7 +67,7 @@ contract PoolTest is Test {
         assertEq(perToken, 4e17);
     }
 
-    function test_P_resetToken() public {
+    function test_P_ResetToken_Sucess() public {
         FT newStakingToken = new FT();
         LPToken newRewardsToken = new LPToken();
         pool.resetToken(address(newStakingToken), address(newRewardsToken));
@@ -75,14 +75,14 @@ contract PoolTest is Test {
         assertEq(address(pool.rewardsToken()), address(newRewardsToken));
     }
 
-    function test_P_stake() public {
+    function test_P_Stake_Success() public {
         mintAndApproveToken(alice);
         vm.prank(alice);
         pool.stake(10);
         assertEq(pool.totalSupply(), 10);
     }
 
-    function test_P_withdraw() public {
+    function test_P_Withdraw_Success() public {
         stakingToken.mint(alice, 100);
         vm.prank(alice);
         stakingToken.approve(address(pool), 10);
@@ -93,7 +93,7 @@ contract PoolTest is Test {
         assertEq(pool.totalSupply(), 5);
     }
 
-    function test_P_earned() public {
+    function test_P_Earned_Success() public {
         // set the variable value
         updateVariable();
 
@@ -101,7 +101,7 @@ contract PoolTest is Test {
         assertEq(earn, 40);
     }
 
-    function test_P_getReward() public {
+    function test_P_GetReward_Success() public {
         // set the variable value
         updateVariable();
         vm.prank(alice);
@@ -110,12 +110,12 @@ contract PoolTest is Test {
         assertEq(balance, 40);
     }
 
-    function test_P_setRewardsDuraton() public {
+    function test_P_SetRewardsDuraton_Success() public {
         pool.setRewardsDuration(100);
         assertEq(pool.duration(), 100);
     }
 
-    function test_P_notifyRewardAmount() public {
+    function test_P_NotifyRewardAmount_Success() public {
         // set the variable value
         pool.setRewardsDuration(50);
         rewardsToken.mint(address(pool), 1000);
@@ -129,7 +129,7 @@ contract PoolTest is Test {
         assertEq(pool.updatedAt(), block.timestamp);
     }
 
-    function test_P_getBalanceOfContract() public {
+    function test_P_GetBalanceOfContract_Success() public {
         // set the variable value
         updateVariable();
 
@@ -137,17 +137,22 @@ contract PoolTest is Test {
         assertEq(balance, 1000);
     }
 
-    function test_P_withdrawRewardToken() public {
+    function test_P_WithdrawRewardToken_Success() public {
         // set the variable value
         updateVariable();
-
-        vm.expectRevert("still product rewardToken");
-        pool.withdrawRewardToken();
 
         vm.warp(block.timestamp + 100);
         pool.withdrawRewardToken();
         uint256 balance = rewardsToken.balanceOf(pool.owner());
         assertEq(balance, 1000);
+    }
+
+    function test_P_WithdrawRewardToken_Fail() public {
+        // set the variable value
+        updateVariable();
+
+        vm.expectRevert("still product rewardToken");
+        pool.withdrawRewardToken();
     }
 
     function mintAndApproveToken(address user) private {
@@ -174,4 +179,3 @@ contract PoolTest is Test {
         // rewards[alice] = 40 (即 earned(alice) = 40)
     }
 }
-

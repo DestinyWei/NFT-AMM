@@ -38,10 +38,10 @@
   "methodIdentifiers": {
     "calculateRewardTokenAmount(uint256,uint256)": "49e82010"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_reserver\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_addAmount\",\"type\":\"uint256\"}],\"name\":\"calculateRewardTokenAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"output\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IFTCalculate.sol\":\"IFTCalculate\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IFTCalculate.sol\":{\"keccak256\":\"0x864a72d281eded8724cc46efd60bc2b0136d092473762d6680443fcbcc4ee7f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bf15e69ecd9967a613f75977899206479a146cf640952b3c4a29bb5c6886d8d6\",\"dweb:/ipfs/QmZdznSRqoWh7d5RQ1bmWbAUQZJnk5h8XTCZ6XnHbNe5ZA\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_reserver\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_addAmount\",\"type\":\"uint256\"}],\"name\":\"calculateRewardTokenAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"output\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IFTCalculate.sol\":\"IFTCalculate\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IFTCalculate.sol\":{\"keccak256\":\"0x864a72d281eded8724cc46efd60bc2b0136d092473762d6680443fcbcc4ee7f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bf15e69ecd9967a613f75977899206479a146cf640952b3c4a29bb5c6886d8d6\",\"dweb:/ipfs/QmZdznSRqoWh7d5RQ1bmWbAUQZJnk5h8XTCZ6XnHbNe5ZA\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.19+commit.7dd6d404"
+      "version": "0.8.17+commit.8df45f5f"
     },
     "language": "Solidity",
     "output": {
@@ -125,12 +125,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "35:193:13",
+    "src": "35:193:14",
     "nodes": [
       {
         "id": 3673,
         "nodeType": "PragmaDirective",
-        "src": "35:24:13",
+        "src": "35:24:14",
         "nodes": [],
         "literals": [
           "solidity",
@@ -142,19 +142,19 @@
       {
         "id": 3683,
         "nodeType": "ContractDefinition",
-        "src": "63:163:13",
+        "src": "63:163:14",
         "nodes": [
           {
             "id": 3682,
             "nodeType": "FunctionDefinition",
-            "src": "93:130:13",
+            "src": "93:130:14",
             "nodes": [],
             "functionSelector": "49e82010",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "calculateRewardTokenAmount",
-            "nameLocation": "102:26:13",
+            "nameLocation": "102:26:14",
             "parameters": {
               "id": 3678,
               "nodeType": "ParameterList",
@@ -164,10 +164,10 @@
                   "id": 3675,
                   "mutability": "mutable",
                   "name": "_reserver",
-                  "nameLocation": "144:9:13",
+                  "nameLocation": "144:9:14",
                   "nodeType": "VariableDeclaration",
                   "scope": 3682,
-                  "src": "139:14:13",
+                  "src": "139:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -178,7 +178,7 @@
                     "id": 3674,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "139:4:13",
+                    "src": "139:4:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -191,10 +191,10 @@
                   "id": 3677,
                   "mutability": "mutable",
                   "name": "_addAmount",
-                  "nameLocation": "169:10:13",
+                  "nameLocation": "169:10:14",
                   "nodeType": "VariableDeclaration",
                   "scope": 3682,
-                  "src": "164:15:13",
+                  "src": "164:15:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -205,7 +205,7 @@
                     "id": 3676,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "164:4:13",
+                    "src": "164:4:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -214,7 +214,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "128:58:13"
+              "src": "128:58:14"
             },
             "returnParameters": {
               "id": 3681,
@@ -225,10 +225,10 @@
                   "id": 3680,
                   "mutability": "mutable",
                   "name": "output",
-                  "nameLocation": "215:6:13",
+                  "nameLocation": "215:6:14",
                   "nodeType": "VariableDeclaration",
                   "scope": 3682,
-                  "src": "210:11:13",
+                  "src": "210:11:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -239,7 +239,7 @@
                     "id": 3679,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "210:4:13",
+                    "src": "210:4:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -248,7 +248,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "209:13:13"
+              "src": "209:13:14"
             },
             "scope": 3683,
             "stateMutability": "pure",
@@ -266,12 +266,12 @@
           3683
         ],
         "name": "IFTCalculate",
-        "nameLocation": "73:12:13",
+        "nameLocation": "73:12:14",
         "scope": 3684,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 13
+  "id": 14
 }

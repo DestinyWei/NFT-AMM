@@ -33,10 +33,10 @@
   "methodIdentifiers": {
     "isFTToken(address)": "43d3b761"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_FTAddr\",\"type\":\"address\"}],\"name\":\"isFTToken\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IFragmentation.sol\":\"IFragmentation\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IFragmentation.sol\":{\"keccak256\":\"0xcc63ac12095f912d32a8d503c807466c7020a946657a37d2d3fc77547caaeaca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2949ee5a40bd19849c38407e44c28d95e0ec7e81693cb9cdc72f3ef1bebfe25d\",\"dweb:/ipfs/QmStUQs3Y2nmtKMFGohREWjqCpbTeGUqVpTPCAT6WSNDS4\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_FTAddr\",\"type\":\"address\"}],\"name\":\"isFTToken\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IFragmentation.sol\":\"IFragmentation\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IFragmentation.sol\":{\"keccak256\":\"0x3b45e79e5d9ef682dbce7277b1d21143e3074f3cc72151b50405cc1ae7062df1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6145764d7d84216712b6a819b42569d5a6d5761fed255c9d3ccf294ad313bee0\",\"dweb:/ipfs/QmRUNAT1spmQXTbhyfbBWkx88rjWQKwQUFNasUw8K53iVa\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.19+commit.7dd6d404"
+      "version": "0.8.17+commit.8df45f5f"
     },
     "language": "Solidity",
     "output": {
@@ -96,10 +96,10 @@
     },
     "sources": {
       "contracts/interfaces/IFragmentation.sol": {
-        "keccak256": "0xcc63ac12095f912d32a8d503c807466c7020a946657a37d2d3fc77547caaeaca",
+        "keccak256": "0x3b45e79e5d9ef682dbce7277b1d21143e3074f3cc72151b50405cc1ae7062df1",
         "urls": [
-          "bzz-raw://2949ee5a40bd19849c38407e44c28d95e0ec7e81693cb9cdc72f3ef1bebfe25d",
-          "dweb:/ipfs/QmStUQs3Y2nmtKMFGohREWjqCpbTeGUqVpTPCAT6WSNDS4"
+          "bzz-raw://6145764d7d84216712b6a819b42569d5a6d5761fed255c9d3ccf294ad313bee0",
+          "dweb:/ipfs/QmRUNAT1spmQXTbhyfbBWkx88rjWQKwQUFNasUw8K53iVa"
         ],
         "license": "MIT"
       }
@@ -115,12 +115,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "35:175:14",
+    "src": "33:169:15",
     "nodes": [
       {
         "id": 3685,
         "nodeType": "PragmaDirective",
-        "src": "35:24:14",
+        "src": "33:24:15",
         "nodes": [],
         "literals": [
           "solidity",
@@ -132,19 +132,19 @@
       {
         "id": 3693,
         "nodeType": "ContractDefinition",
-        "src": "63:145:14",
+        "src": "59:142:15",
         "nodes": [
           {
             "id": 3692,
             "nodeType": "FunctionDefinition",
-            "src": "145:60:14",
+            "src": "139:60:15",
             "nodes": [],
             "functionSelector": "43d3b761",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "isFTToken",
-            "nameLocation": "154:9:14",
+            "nameLocation": "148:9:15",
             "parameters": {
               "id": 3688,
               "nodeType": "ParameterList",
@@ -154,10 +154,10 @@
                   "id": 3687,
                   "mutability": "mutable",
                   "name": "_FTAddr",
-                  "nameLocation": "172:7:14",
+                  "nameLocation": "166:7:15",
                   "nodeType": "VariableDeclaration",
                   "scope": 3692,
-                  "src": "164:15:14",
+                  "src": "158:15:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -168,7 +168,7 @@
                     "id": 3686,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "164:7:14",
+                    "src": "158:7:15",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -178,7 +178,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "163:17:14"
+              "src": "157:17:15"
             },
             "returnParameters": {
               "id": 3691,
@@ -192,7 +192,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 3692,
-                  "src": "199:4:14",
+                  "src": "193:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -203,7 +203,7 @@
                     "id": 3689,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "199:4:14",
+                    "src": "193:4:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -212,7 +212,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "198:6:14"
+              "src": "192:6:15"
             },
             "scope": 3693,
             "stateMutability": "nonpayable",
@@ -230,12 +230,12 @@
           3693
         ],
         "name": "IFragmentation",
-        "nameLocation": "73:14:14",
+        "nameLocation": "69:14:15",
         "scope": 3694,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 14
+  "id": 15
 }
