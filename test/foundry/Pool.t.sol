@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+
+=======
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.17;
@@ -174,3 +178,4 @@ contract PoolTest is Test {
         // rewards[alice] = 40 (即 earned(alice) = 40)
     }
 }
+
