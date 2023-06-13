@@ -17,6 +17,8 @@ contract NFTAMMTestBase is Test {
     MyNFT public myNFT;
     //StakingRewards public stakingRewards;
 
+    address public constant USDT = 0xA1d7f71cbBb361A77820279958BAC38fC3667c1a;
+
     Utils utils;
     address payable[] internal users;
     address internal alice;
@@ -28,7 +30,7 @@ contract NFTAMMTestBase is Test {
     string public SEPOLIA_RPC_URL = vm.envString("SEPOLIA_RPC_URL");
     uint256 public constant BLOCK_NUM = 3648420;
 
-    function setUp() public {
+    function _setUp() internal {
         sepoliaFork = vm.createSelectFork(SEPOLIA_RPC_URL, BLOCK_NUM);
 
         utils = new Utils();

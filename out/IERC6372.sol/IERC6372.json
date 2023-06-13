@@ -130,17 +130,17 @@
   },
   "ast": {
     "absolutePath": "node_modules/@openzeppelin/contracts/interfaces/IERC6372.sol",
-    "id": 36300,
+    "id": 36310,
     "exportedSymbols": {
       "IERC6372": [
-        36299
+        36309
       ]
     },
     "nodeType": "SourceUnit",
     "src": "107:411:54",
     "nodes": [
       {
-        "id": 36286,
+        "id": 36296,
         "nodeType": "PragmaDirective",
         "src": "107:23:54",
         "nodes": [],
@@ -152,17 +152,17 @@
         ]
       },
       {
-        "id": 36299,
+        "id": 36309,
         "nodeType": "ContractDefinition",
         "src": "132:385:54",
         "nodes": [
           {
-            "id": 36292,
+            "id": 36302,
             "nodeType": "FunctionDefinition",
             "src": "295:48:54",
             "nodes": [],
             "documentation": {
-              "id": 36287,
+              "id": 36297,
               "nodeType": "StructuredDocumentation",
               "src": "157:133:54",
               "text": " @dev Clock used for flagging checkpoints. Can be overridden to implement timestamp based checkpoints (and voting)."
@@ -174,23 +174,23 @@
             "name": "clock",
             "nameLocation": "304:5:54",
             "parameters": {
-              "id": 36288,
+              "id": 36298,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "309:2:54"
             },
             "returnParameters": {
-              "id": 36291,
+              "id": 36301,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 36290,
+                  "id": 36300,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36292,
+                  "scope": 36302,
                   "src": "335:6:54",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -199,7 +199,7 @@
                     "typeString": "uint48"
                   },
                   "typeName": {
-                    "id": 36289,
+                    "id": 36299,
                     "name": "uint48",
                     "nodeType": "ElementaryTypeName",
                     "src": "335:6:54",
@@ -213,18 +213,18 @@
               ],
               "src": "334:8:54"
             },
-            "scope": 36299,
+            "scope": 36309,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 36298,
+            "id": 36308,
             "nodeType": "FunctionDefinition",
             "src": "455:60:54",
             "nodes": [],
             "documentation": {
-              "id": 36293,
+              "id": 36303,
               "nodeType": "StructuredDocumentation",
               "src": "349:48:54",
               "text": " @dev Description of the clock"
@@ -236,23 +236,23 @@
             "name": "CLOCK_MODE",
             "nameLocation": "464:10:54",
             "parameters": {
-              "id": 36294,
+              "id": 36304,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "474:2:54"
             },
             "returnParameters": {
-              "id": 36297,
+              "id": 36307,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 36296,
+                  "id": 36306,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36298,
+                  "scope": 36308,
                   "src": "500:13:54",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -261,7 +261,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 36295,
+                    "id": 36305,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "500:6:54",
@@ -275,7 +275,7 @@
               ],
               "src": "499:15:54"
             },
-            "scope": 36299,
+            "scope": 36309,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -288,11 +288,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          36299
+          36309
         ],
         "name": "IERC6372",
         "nameLocation": "142:8:54",
-        "scope": 36300,
+        "scope": 36310,
         "usedErrors": []
       }
     ],

@@ -14,7 +14,7 @@ contract NFTAMM {
 
     address[] public lpTokenAddressList; // LPToken的数组
     address[] public rewardTokenAddressList;
-
+    
     mapping(address => mapping(address => uint)) reserve; // LPTokenAddress => 相应token的资产 => 资产的amount
 
     // 检索LPToken
@@ -216,8 +216,8 @@ contract NFTAMM {
 
         require(_amount0 > 0, "require _amount0 > 0 && _amount1 >0");
         require(_token0 != _token1, "_token0 == _token1");
-        IERC20 token0 = IERC20(_token0);
-        token0.transferFrom(msg.sender, address(this), _amount0);
+        //IERC20 token0 = IERC20(_token0);
+        IERC20(_token0).transferFrom(msg.sender, address(this), _amount0);
         address lptokenAddr;
 
         /*

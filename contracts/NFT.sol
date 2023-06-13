@@ -19,6 +19,6 @@ contract MyNFT is ERC721, Ownable {
     }
 
     function getTokenId() public returns(uint256) {
-        return _tokenIdCounter.current();
+        return _tokenIdCounter.current() - 1;
     }
 }
