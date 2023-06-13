@@ -23,6 +23,9 @@ contract NFTAMMTest is NFTAMMTestBase {
     function test_NA_receive_Success() public {
         deal(alice, 1000 ether);
         vm.prank(alice);
+        address(nftAMM).call{value: 10 ether}()
+        assertEq(alice.balance, 990);
+        assertEq(address(nftAMM).balance, 10);
     }
 
     function test_NA_addLiquidityWithETH_Success() public {
@@ -32,7 +35,9 @@ contract NFTAMMTest is NFTAMMTestBase {
         fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
         address FT = fragmentation.getFTAddr(address(myNFT));
         uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
+
         assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
+        
         deal(alice, 1000 ether);
         IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
         IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
