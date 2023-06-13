@@ -54,6 +54,7 @@ contract PoolTest is Test {
         vm.warp(block.timestamp + 100);
         time = pool.lastTimeRewardApplicable();
         assertEq(time, pool.finishAt());
+       
     }
 
     function test_P_rewardPerToken() public {

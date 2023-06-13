@@ -37,15 +37,27 @@ contract NFTAMMTest is NFTAMMTestBase {
         myNFT.approve(address(fragmentation), myNFT.getTokenId());
         fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
         FT = fragmentation.getFTAddr(address(myNFT));
+
         uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
+        uint256 wethBalanceNFTAMMBefore = IERC20(nftAMM.WETHAddr()).balanceOf(address(nftAMM));
+        uint256 ftBalanceNFTAMMBefore = IERC20(FT).balanceOf(address(nftAMM));
 
         assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
+        assertEq(address(nftAMM).balance, 0);
+        assertEq(wethBalanceNFTAMMBefore, 0);
+        assertEq(ftBalanceNFTAMMBefore, 0);
 
         deal(alice, 1000 ether);
         IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
         IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
         nftAMM.addLiquidityWithETH{value: 1 ether}(FT, ftBalanceAlice);
         
+        uint256 wethBalanceNFTAMMAfter = IERC20(nftAMM.WETHAddr()).balanceOf(address(nftAMM));
+        uint256 ftBalanceNFTAMMAfter = IERC20(FT).balanceOf(address(nftAMM));
+
+        assertEq(wethBalanceNFTAMMAfter, 1 ether);
+        assertEq(ftBalanceNFTAMMAfter, ftBalanceAlice);
+        assertEq(address(nftAMM).balance, 0);
     }
 
     function test_NA_addLiquidityWithFT_Success() public {
