@@ -54,11 +54,101 @@ contract NFTAMMTest is NFTAMMTestBase {
     }
 
     function test_NA_addLiquidity_Success() public {
-
+        deal(DAI, alice, 100000);
+        deal(USDC, alice, 100000);
+        vm.startPrank(alice);
+        IERC20(DAI).approve(address(nftAMM), 100000);
+        IERC20(USDC).approve(address(nftAMM), 100000);
+        nftAMM.addLiquidity(USDC, DAI, 1000, 1000);
     }
 
     function test_NA_removeLiquidity_Success() public {
+        deal(DAI, alice, 100000);
+        deal(USDC, alice, 100000);
+        vm.startPrank(alice);
+        IERC20(DAI).approve(address(nftAMM), 100000);
+        IERC20(USDC).approve(address(nftAMM), 100000);
+        nftAMM.addLiquidity(USDC, DAI, 1000, 1000);
+        nftAMM.removeLiquidity(USDC, DAI, 899);
+    }
 
+    function test_NA_removeLiquidity_NotAddLiquidity_Fail() public {
+        vm.expectRevert();
+        nftAMM.removeLiquidity(USDC, DAI, 1000);
+    }
+
+    function test_NA_removeLiquidity_ShouldLeft100WeiInPool_Fail() public {
+        deal(DAI, alice, 100000);
+        deal(USDC, alice, 100000);
+        vm.startPrank(alice);
+        IERC20(DAI).approve(address(nftAMM), 100000);
+        IERC20(USDC).approve(address(nftAMM), 100000);
+        nftAMM.addLiquidity(USDC, DAI, 1000, 1000);
+        vm.expectRevert("paieCreator should left 100 wei lptoken in pool");
+        nftAMM.removeLiquidity(USDC, DAI, 1000);
+    }
+
+    function test_NA_swapWithETH_Success() public {
+        myNFT.safeMint(alice);
+        vm.startPrank(alice);
+        myNFT.approve(address(fragmentation), myNFT.getTokenId());
+        fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
+        address FT = fragmentation.getFTAddr(address(myNFT));
+        uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
+        assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
+        deal(alice, 1000 ether);
+        IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
+        IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
+        nftAMM.addLiquidityWithETH{value: 1 ether}(FT, ftBalanceAlice);
+
+        IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
+        nftAMM.swapWithETH{value: 1 ether}(FT, 10000);
+
+    }
+
+    function test_NA_swapToETH_Success() public {
+        myNFT.safeMint(alice);
+        vm.startPrank(alice);
+        myNFT.approve(address(fragmentation), myNFT.getTokenId());
+        fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
+        address FT = fragmentation.getFTAddr(address(myNFT));
+        uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
+        assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
+        deal(alice, 1000 ether);
+        IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
+        IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
+        nftAMM.addLiquidityWithETH{value: 1 ether}(FT, ftBalanceAlice);
+
+        deal(FT, alice, 1000000);
+        IERC20(FT).approve(address(nftAMM), 100000);
+        nftAMM.swapToETH(FT, 100000, 1000);
+    }
+
+    function test_NA_swap_Success() public {
+        deal(DAI, alice, 1 ether);
+        deal(USDC, alice, 1 ether);
+        vm.startPrank(alice);
+        IERC20(DAI).approve(address(nftAMM), 1 ether);
+        IERC20(USDC).approve(address(nftAMM), 1 ether);
+        nftAMM.addLiquidity(USDC, DAI, 0.5 ether, 0.5 ether);
+
+        IERC20(DAI).approve(address(nftAMM), 1 ether);
+        IERC20(USDC).approve(address(nftAMM), 1 ether);
+        nftAMM.swap(DAI, USDC, 0.0005 ether);
+
+    }
+
+    function test_NA_swapByLimitSli_Success() public {
+        deal(DAI, alice, 1 ether);
+        deal(USDC, alice, 1 ether);
+        vm.startPrank(alice);
+        IERC20(DAI).approve(address(nftAMM), 1 ether);
+        IERC20(USDC).approve(address(nftAMM), 1 ether);
+        nftAMM.addLiquidity(USDC, DAI, 0.5 ether, 0.5 ether);
+
+        IERC20(DAI).approve(address(nftAMM), 1 ether);
+        IERC20(USDC).approve(address(nftAMM), 1 ether);
+        nftAMM.swapByLimitSli(DAI, USDC, 0.0005 ether, 10000);
     }
 
 }

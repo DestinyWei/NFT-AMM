@@ -333,6 +333,7 @@ contract NFTAMM {
     ) public payable reEntrancyMutex {
         uint amountIn = msg.value;
         WETH.depositETH{value: amountIn}();
+        WETH.transfer(msg.sender, amountIn);
         swapByLimitSli(WETHAddr, _tokenOut, amountIn, _disirSli);
     }
 
