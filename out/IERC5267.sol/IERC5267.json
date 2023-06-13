@@ -172,17 +172,17 @@
   },
   "ast": {
     "absolutePath": "node_modules/@openzeppelin/contracts/interfaces/IERC5267.sol",
-    "id": 36276,
+    "id": 36286,
     "exportedSymbols": {
       "IERC5267": [
-        36275
+        36285
       ]
     },
     "nodeType": "SourceUnit",
     "src": "107:631:52",
     "nodes": [
       {
-        "id": 36252,
+        "id": 36262,
         "nodeType": "PragmaDirective",
         "src": "107:23:52",
         "nodes": [],
@@ -194,18 +194,18 @@
         ]
       },
       {
-        "id": 36275,
+        "id": 36285,
         "nodeType": "ContractDefinition",
         "src": "132:605:52",
         "nodes": [
           {
-            "id": 36255,
+            "id": 36265,
             "nodeType": "EventDefinition",
             "src": "246:28:52",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 36253,
+              "id": 36263,
               "nodeType": "StructuredDocumentation",
               "src": "157:84:52",
               "text": " @dev MAY be emitted to signal that the domain could have changed."
@@ -214,19 +214,19 @@
             "name": "EIP712DomainChanged",
             "nameLocation": "252:19:52",
             "parameters": {
-              "id": 36254,
+              "id": 36264,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "271:2:52"
             }
           },
           {
-            "id": 36274,
+            "id": 36284,
             "nodeType": "FunctionDefinition",
             "src": "425:310:52",
             "nodes": [],
             "documentation": {
-              "id": 36256,
+              "id": 36266,
               "nodeType": "StructuredDocumentation",
               "src": "280:140:52",
               "text": " @dev returns the fields and values that describe the domain separator used by this contract for EIP-712\n signature."
@@ -238,23 +238,23 @@
             "name": "eip712Domain",
             "nameLocation": "434:12:52",
             "parameters": {
-              "id": 36257,
+              "id": 36267,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "446:2:52"
             },
             "returnParameters": {
-              "id": 36273,
+              "id": 36283,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 36259,
+                  "id": 36269,
                   "mutability": "mutable",
                   "name": "fields",
                   "nameLocation": "516:6:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "509:13:52",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -263,7 +263,7 @@
                     "typeString": "bytes1"
                   },
                   "typeName": {
-                    "id": 36258,
+                    "id": 36268,
                     "name": "bytes1",
                     "nodeType": "ElementaryTypeName",
                     "src": "509:6:52",
@@ -276,12 +276,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 36261,
+                  "id": 36271,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "550:4:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "536:18:52",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -290,7 +290,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 36260,
+                    "id": 36270,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "536:6:52",
@@ -303,12 +303,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 36263,
+                  "id": 36273,
                   "mutability": "mutable",
                   "name": "version",
                   "nameLocation": "582:7:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "568:21:52",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -317,7 +317,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 36262,
+                    "id": 36272,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "568:6:52",
@@ -330,12 +330,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 36265,
+                  "id": 36275,
                   "mutability": "mutable",
                   "name": "chainId",
                   "nameLocation": "611:7:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "603:15:52",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -344,7 +344,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 36264,
+                    "id": 36274,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "603:7:52",
@@ -357,12 +357,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 36267,
+                  "id": 36277,
                   "mutability": "mutable",
                   "name": "verifyingContract",
                   "nameLocation": "640:17:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "632:25:52",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -371,7 +371,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 36266,
+                    "id": 36276,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "632:7:52",
@@ -385,12 +385,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 36269,
+                  "id": 36279,
                   "mutability": "mutable",
                   "name": "salt",
                   "nameLocation": "679:4:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "671:12:52",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -399,7 +399,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 36268,
+                    "id": 36278,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "671:7:52",
@@ -412,12 +412,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 36272,
+                  "id": 36282,
                   "mutability": "mutable",
                   "name": "extensions",
                   "nameLocation": "714:10:52",
                   "nodeType": "VariableDeclaration",
-                  "scope": 36274,
+                  "scope": 36284,
                   "src": "697:27:52",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -427,7 +427,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 36270,
+                      "id": 36280,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
                       "src": "697:7:52",
@@ -436,7 +436,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 36271,
+                    "id": 36281,
                     "nodeType": "ArrayTypeName",
                     "src": "697:9:52",
                     "typeDescriptions": {
@@ -449,7 +449,7 @@
               ],
               "src": "495:239:52"
             },
-            "scope": 36275,
+            "scope": 36285,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -462,11 +462,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          36275
+          36285
         ],
         "name": "IERC5267",
         "nameLocation": "142:8:52",
-        "scope": 36276,
+        "scope": 36286,
         "usedErrors": []
       }
     ],

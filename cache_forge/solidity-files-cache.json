@@ -12,10 +12,10 @@
     ]
   },
   "files": {
-    "contracts/Calculate.sol": {
-      "lastModificationDate": 1686207523275,
-      "contentHash": "c6f8fd2cb4bb53820a7b3ffce086bee2",
-      "sourceName": "contracts/Calculate.sol",
+    "contracts/AmmPeriphery.sol": {
+      "lastModificationDate": 1686207516140,
+      "contentHash": "0d41031433445abcbe9be65fe8abc654",
+      "sourceName": "contracts/AmmPeriphery.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -44,11 +44,13 @@
           "libraries": {}
         }
       },
-      "imports": [],
-      "versionRequirement": "^0.8.17",
+      "imports": [
+        "contracts\\interfaces\\IAMM.sol"
+      ],
+      "versionRequirement": "^0.8.9",
       "artifacts": {
-        "FTCalculate": {
-          "0.8.19+commit.7dd6d404.Windows.msvc": "Calculate.sol\\FTCalculate.json"
+        "Router": {
+          "0.8.19+commit.7dd6d404.Windows.msvc": "AmmPeriphery.sol\\Router.json"
         }
       }
     },
@@ -165,9 +167,49 @@
         }
       }
     },
+    "contracts/FTCalculate.sol": {
+      "lastModificationDate": 1686229290008,
+      "contentHash": "c6f8fd2cb4bb53820a7b3ffce086bee2",
+      "sourceName": "contracts/FTCalculate.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.17",
+      "artifacts": {
+        "FTCalculate": {
+          "0.8.19+commit.7dd6d404.Windows.msvc": "FTCalculate.sol\\FTCalculate.json"
+        }
+      }
+    },
     "contracts/Fragmentation.sol": {
-      "lastModificationDate": 1686207795190,
-      "contentHash": "dde23ab093444745526fbc663aff8a1b",
+      "lastModificationDate": 1686624923876,
+      "contentHash": "fe28a933b30859f8365c8f58a098d87f",
       "sourceName": "contracts/Fragmentation.sol",
       "solcConfig": {
         "settings": {
@@ -213,6 +255,63 @@
       "artifacts": {
         "Fragmentation": {
           "0.8.19+commit.7dd6d404.Windows.msvc": "Fragmentation.sol\\Fragmentation.json"
+        }
+      }
+    },
+    "contracts/FundContract.sol": {
+      "lastModificationDate": 1686229323482,
+      "contentHash": "288af490f5555f5731ddbefb44a3fef1",
+      "sourceName": "contracts/FundContract.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin\\contracts-upgradeable/access/AccessControlUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/interfaces/IERC1967Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+        "node_modules/@openzeppelin\\contracts-upgradeable/proxy/utils/Initializable.sol",
+        "node_modules/@openzeppelin\\contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/math/SignedMathUpgradeable.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "FundContract": {
+          "0.8.19+commit.7dd6d404.Windows.msvc": "FundContract.sol\\FundContract.json"
         }
       }
     },
@@ -263,8 +362,8 @@
       }
     },
     "contracts/NFT.sol": {
-      "lastModificationDate": 1686207493424,
-      "contentHash": "4b839feea18e03badf7126c4bad77e6c",
+      "lastModificationDate": 1686629278010,
+      "contentHash": "1e709ef620a9fdb698f4856cee5ce9d5",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "settings": {
@@ -317,8 +416,8 @@
       }
     },
     "contracts/NFTAMM.sol": {
-      "lastModificationDate": 1686219910556,
-      "contentHash": "f9dbcdc25920737a6829f416d0df4782",
+      "lastModificationDate": 1686638724923,
+      "contentHash": "a965748854d4462bfcdb9586df2e0636",
       "sourceName": "contracts/NFTAMM.sol",
       "solcConfig": {
         "settings": {
@@ -350,7 +449,7 @@
       },
       "imports": [
         "contracts\\LPToken.sol",
-        "contracts\\interfaces\\ICalculate.sol",
+        "contracts\\interfaces\\IFTCalculate.sol",
         "contracts\\interfaces\\IFragmentation.sol",
         "contracts\\interfaces\\ILPToken.sol",
         "contracts\\interfaces\\IWETH.sol",
@@ -368,7 +467,7 @@
       }
     },
     "contracts/Pool.sol": {
-      "lastModificationDate": 1686207649338,
+      "lastModificationDate": 1686229184338,
       "contentHash": "3e6f6839afb4ef37164e331a67d80889",
       "sourceName": "contracts/Pool.sol",
       "solcConfig": {
@@ -411,7 +510,7 @@
       }
     },
     "contracts/WETH.sol": {
-      "lastModificationDate": 1686207495604,
+      "lastModificationDate": 1686229217543,
       "contentHash": "8f6bba20ce6d0075f44c880a696de090",
       "sourceName": "contracts/WETH.sol",
       "solcConfig": {
@@ -455,105 +554,6 @@
         }
       }
     },
-    "contracts/ammPeriphery.sol": {
-      "lastModificationDate": 1686207516140,
-      "contentHash": "0d41031433445abcbe9be65fe8abc654",
-      "sourceName": "contracts/ammPeriphery.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "contracts\\interfaces\\IAMM.sol"
-      ],
-      "versionRequirement": "^0.8.9",
-      "artifacts": {
-        "Router": {
-          "0.8.19+commit.7dd6d404.Windows.msvc": "ammPeriphery.sol\\Router.json"
-        }
-      }
-    },
-    "contracts/fundContract.sol": {
-      "lastModificationDate": 1686207492782,
-      "contentHash": "288af490f5555f5731ddbefb44a3fef1",
-      "sourceName": "contracts/fundContract.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "node_modules/@openzeppelin\\contracts-upgradeable/access/AccessControlUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/interfaces/IERC1967Upgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
-        "node_modules/@openzeppelin\\contracts-upgradeable/proxy/utils/Initializable.sol",
-        "node_modules/@openzeppelin\\contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
-        "node_modules/@openzeppelin/contracts-upgradeable/utils/math/SignedMathUpgradeable.sol"
-      ],
-      "versionRequirement": "^0.8.9",
-      "artifacts": {
-        "FundContract": {
-          "0.8.19+commit.7dd6d404.Windows.msvc": "fundContract.sol\\FundContract.json"
-        }
-      }
-    },
     "contracts/interfaces/IAMM.sol": {
       "lastModificationDate": 1686039976149,
       "contentHash": "17024e4aea348f1b1e728aa1f3f61cae",
@@ -594,46 +594,6 @@
         }
       }
     },
-    "contracts/interfaces/ICalculate.sol": {
-      "lastModificationDate": 1686039976150,
-      "contentHash": "fa69f878041e259af5609e043750777e",
-      "sourceName": "contracts/interfaces/ICalculate.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": "^0.8.17",
-      "artifacts": {
-        "ICalculate": {
-          "0.8.19+commit.7dd6d404.Windows.msvc": "ICalculate.sol\\ICalculate.json"
-        }
-      }
-    },
     "contracts/interfaces/IERC20.sol": {
       "lastModificationDate": 1686039976152,
       "contentHash": "71f532bd603086b7775aabe1c9410de9",
@@ -671,6 +631,46 @@
       "artifacts": {
         "IERC20": {
           "0.8.19+commit.7dd6d404.Windows.msvc": "IERC20.sol\\IERC20.json"
+        }
+      }
+    },
+    "contracts/interfaces/IFTCalculate.sol": {
+      "lastModificationDate": 1686227382344,
+      "contentHash": "65f78dad39f0f2bb5c4aaaf0ac6ce3ba",
+      "sourceName": "contracts/interfaces/IFTCalculate.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.17",
+      "artifacts": {
+        "IFTCalculate": {
+          "0.8.19+commit.7dd6d404.Windows.msvc": "IFTCalculate.sol\\IFTCalculate.json"
         }
       }
     },
@@ -868,7 +868,7 @@
       },
       "imports": [
         "lib/forge-std/src/StdStorage.sol",
-        "lib/forge-std/src/Vm.sol"
+        "lib/forge-std/src\\Vm.sol"
       ],
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
@@ -959,7 +959,7 @@
         }
       },
       "imports": [
-        "lib/forge-std/src/Vm.sol"
+        "lib/forge-std/src\\Vm.sol"
       ],
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
@@ -1002,7 +1002,7 @@
       },
       "imports": [
         "lib/forge-std/src/StdStorage.sol",
-        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src\\Vm.sol",
         "lib/forge-std/src/console2.sol"
       ],
       "versionRequirement": ">=0.6.2, <0.9.0",
@@ -1128,7 +1128,7 @@
         }
       },
       "imports": [
-        "lib/forge-std/src/Vm.sol"
+        "lib/forge-std/src\\Vm.sol"
       ],
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
@@ -1210,7 +1210,7 @@
         }
       },
       "imports": [
-        "lib/forge-std/src/Vm.sol"
+        "lib/forge-std/src\\Vm.sol"
       ],
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
@@ -1255,7 +1255,7 @@
         }
       },
       "imports": [
-        "lib/forge-std/src/Vm.sol"
+        "lib/forge-std/src\\Vm.sol"
       ],
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
@@ -1297,7 +1297,7 @@
         }
       },
       "imports": [
-        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src\\Vm.sol",
         "lib/forge-std/src/interfaces/IMulticall3.sol"
       ],
       "versionRequirement": ">=0.6.2, <0.9.0",
@@ -1352,7 +1352,7 @@
         "lib/forge-std/src/StdStorage.sol",
         "lib/forge-std/src/StdStyle.sol",
         "lib/forge-std/src/StdUtils.sol",
-        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src\\Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
         "lib/forge-std/src/interfaces/IMulticall3.sol"
@@ -3683,8 +3683,8 @@
       }
     },
     "test/foundry/Fragmentation.t.sol": {
-      "lastModificationDate": 1686211880762,
-      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "lastModificationDate": 1686625336953,
+      "contentHash": "49fe6303c3b21af542d49c03e28ef993",
       "sourceName": "test/foundry/Fragmentation.t.sol",
       "solcConfig": {
         "settings": {
@@ -3714,17 +3714,103 @@
           "libraries": {}
         }
       },
-      "imports": [],
-      "versionRequirement": null,
+      "imports": [
+        "contracts\\AmmPeriphery.sol",
+        "contracts\\DexToken.sol",
+        "contracts\\FT.sol",
+        "contracts\\FTCalculate.sol",
+        "contracts\\Fragmentation.sol",
+        "contracts\\FundContract.sol",
+        "contracts\\LPToken.sol",
+        "contracts\\NFT.sol",
+        "contracts\\NFTAMM.sol",
+        "contracts\\WETH.sol",
+        "contracts\\interfaces\\IAMM.sol",
+        "contracts\\interfaces\\IFTCalculate.sol",
+        "contracts\\interfaces\\IFragmentation.sol",
+        "contracts\\interfaces\\ILPToken.sol",
+        "contracts\\interfaces\\IWETH.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src\\Test.sol",
+        "lib/forge-std/src\\Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "node_modules/@openzeppelin\\contracts/access/Ownable.sol",
+        "node_modules/@openzeppelin/contracts/governance/utils/IVotes.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC5267.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC5805.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC6372.sol",
+        "node_modules/@openzeppelin\\contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@openzeppelin\\contracts/security/Pausable.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC20/ERC20.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC20/extensions/ERC20Snapshot.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC20/extensions/ERC20Votes.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC721/ERC721.sol",
+        "node_modules/@openzeppelin\\contracts/token/ERC721/IERC721.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "node_modules/@openzeppelin/contracts/utils/Address.sol",
+        "node_modules/@openzeppelin/contracts/utils/Arrays.sol",
+        "node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "node_modules/@openzeppelin\\contracts/utils/Counters.sol",
+        "node_modules/@openzeppelin/contracts/utils/ShortStrings.sol",
+        "node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+        "node_modules/@openzeppelin/contracts/utils/Strings.sol",
+        "node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "node_modules/@openzeppelin/contracts/utils/cryptography/EIP712.sol",
+        "node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+        "node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol",
+        "node_modules/@openzeppelin\\contracts-upgradeable/access/AccessControlUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/interfaces/IERC1967Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+        "node_modules/@openzeppelin\\contracts-upgradeable/proxy/utils/Initializable.sol",
+        "node_modules/@openzeppelin\\contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+        "node_modules/@openzeppelin/contracts-upgradeable/utils/math/SignedMathUpgradeable.sol",
+        "test\\foundry\\utils\\NFT-AMMTestBase.sol",
+        "test\\foundry\\utils\\Utils.sol",
+        "test\\foundry\\utils\\import.sol"
+      ],
+      "versionRequirement": "^0.8.17",
       "artifacts": {
-        "Fragmentation.t": {
-          "0.8.19+commit.7dd6d404.Windows.msvc": "Fragmentation.t.sol\\Fragmentation.t.json"
+        "FragmentationTest": {
+          "0.8.19+commit.7dd6d404.Windows.msvc": "Fragmentation.t.sol\\FragmentationTest.json"
         }
       }
     },
     "test/foundry/NFTAMM.t.sol": {
-      "lastModificationDate": 1686224431223,
-      "contentHash": "fd2aa4abe86d0a559b3aded552eb437e",
+      "lastModificationDate": 1686639244257,
+      "contentHash": "40a566b150e587b9b080e111dfbe83c4",
       "sourceName": "test/foundry/NFTAMM.t.sol",
       "solcConfig": {
         "settings": {
@@ -3755,18 +3841,18 @@
         }
       },
       "imports": [
-        "contracts\\Calculate.sol",
+        "contracts\\AmmPeriphery.sol",
         "contracts\\DexToken.sol",
         "contracts\\FT.sol",
+        "contracts\\FTCalculate.sol",
         "contracts\\Fragmentation.sol",
+        "contracts\\FundContract.sol",
         "contracts\\LPToken.sol",
         "contracts\\NFT.sol",
         "contracts\\NFTAMM.sol",
         "contracts\\WETH.sol",
-        "contracts\\ammPeriphery.sol",
-        "contracts\\fundContract.sol",
         "contracts\\interfaces\\IAMM.sol",
-        "contracts\\interfaces\\ICalculate.sol",
+        "contracts\\interfaces\\IFTCalculate.sol",
         "contracts\\interfaces\\IFragmentation.sol",
         "contracts\\interfaces\\ILPToken.sol",
         "contracts\\interfaces\\IWETH.sol",
@@ -3889,8 +3975,8 @@
       }
     },
     "test/foundry/utils/NFT-AMMTestBase.sol": {
-      "lastModificationDate": 1686224606122,
-      "contentHash": "2a58b2d2a37217a98d16f174fd57cd92",
+      "lastModificationDate": 1686625774626,
+      "contentHash": "7ec1343172013a971851c530a96eb04f",
       "sourceName": "test/foundry/utils/NFT-AMMTestBase.sol",
       "solcConfig": {
         "settings": {
@@ -3921,18 +4007,18 @@
         }
       },
       "imports": [
-        "contracts\\Calculate.sol",
+        "contracts\\AmmPeriphery.sol",
         "contracts\\DexToken.sol",
         "contracts\\FT.sol",
+        "contracts\\FTCalculate.sol",
         "contracts\\Fragmentation.sol",
+        "contracts\\FundContract.sol",
         "contracts\\LPToken.sol",
         "contracts\\NFT.sol",
         "contracts\\NFTAMM.sol",
         "contracts\\WETH.sol",
-        "contracts\\ammPeriphery.sol",
-        "contracts\\fundContract.sol",
         "contracts\\interfaces\\IAMM.sol",
-        "contracts\\interfaces\\ICalculate.sol",
+        "contracts\\interfaces\\IFTCalculate.sol",
         "contracts\\interfaces\\IFragmentation.sol",
         "contracts\\interfaces\\ILPToken.sol",
         "contracts\\interfaces\\IWETH.sol",
@@ -4057,8 +4143,8 @@
       }
     },
     "test/foundry/utils/import.sol": {
-      "lastModificationDate": 1686224377838,
-      "contentHash": "1607d288f239df0571fd88fbdb5c266b",
+      "lastModificationDate": 1686228271537,
+      "contentHash": "71e09d82c8f8794654256f94bc349b6d",
       "sourceName": "test/foundry/utils/import.sol",
       "solcConfig": {
         "settings": {
@@ -4089,18 +4175,18 @@
         }
       },
       "imports": [
-        "contracts\\Calculate.sol",
+        "contracts\\AmmPeriphery.sol",
         "contracts\\DexToken.sol",
         "contracts\\FT.sol",
+        "contracts\\FTCalculate.sol",
         "contracts\\Fragmentation.sol",
+        "contracts\\FundContract.sol",
         "contracts\\LPToken.sol",
         "contracts\\NFT.sol",
         "contracts\\NFTAMM.sol",
         "contracts\\WETH.sol",
-        "contracts\\ammPeriphery.sol",
-        "contracts\\fundContract.sol",
         "contracts\\interfaces\\IAMM.sol",
-        "contracts\\interfaces\\ICalculate.sol",
+        "contracts\\interfaces\\IFTCalculate.sol",
         "contracts\\interfaces\\IFragmentation.sol",
         "contracts\\interfaces\\ILPToken.sol",
         "contracts\\interfaces\\IWETH.sol",

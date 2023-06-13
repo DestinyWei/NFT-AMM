@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/interfaces/IERC721Receiver.sol";
 pragma solidity ^0.8.17;
 
 contract Fragmentation {
-    uint constant ONE_ETH = 10 ** 18;
+    uint public constant ONE_ETH = 10 ** 18;
     mapping(address => mapping(address => mapping(uint => bool))) public nft_StakeIndex; //useraddress nftaddress tokenid
 
     mapping(address => bool) public isFTCreated; // 相关系列的NFT是否被create
