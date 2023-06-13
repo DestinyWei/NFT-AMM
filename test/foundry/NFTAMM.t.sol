@@ -126,7 +126,6 @@ contract NFTAMMTest is NFTAMMTestBase {
         _addLiquidityWithETH();
         deal(FT, alice, 1000000);
         IERC20(FT).approve(address(nftAMM), 100000);
-
         nftAMM.swapToETH(FT, 100000, 1);
     }
 
