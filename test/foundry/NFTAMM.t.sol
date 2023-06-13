@@ -6,6 +6,8 @@ import "./utils/NFT-AMMTestBase.sol";
 
 contract NFTAMMTest is NFTAMMTestBase {
 
+    address internal FT;
+
     function setUp() public {
         _setUp();
     }
@@ -17,15 +19,16 @@ contract NFTAMMTest is NFTAMMTestBase {
         assertEq(address(nftAMM.calculate()), address(calculate));
         assertEq(address(nftAMM.WETHAddr()), address(weth));
         assertEq(address(nftAMM.fundContract()), address(fund));
-        
+        assertEq(nftAMM.getLptokenLength(), 0);  
     }
 
     function test_NA_receive_Success() public {
         deal(alice, 1000 ether);
         vm.prank(alice);
-        address(nftAMM).call{value: 10 ether}()
-        assertEq(alice.balance, 990);
-        assertEq(address(nftAMM).balance, 10);
+        (bool Success, ) = address(nftAMM).call{value: 10 ether}("");
+        assertTrue(Success);
+        assertEq(alice.balance, 990 ether);
+        assertEq(address(nftAMM).balance, 10 ether);
     }
 
     function test_NA_addLiquidityWithETH_Success() public {
@@ -33,11 +36,11 @@ contract NFTAMMTest is NFTAMMTestBase {
         vm.startPrank(alice);
         myNFT.approve(address(fragmentation), myNFT.getTokenId());
         fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
-        address FT = fragmentation.getFTAddr(address(myNFT));
+        FT = fragmentation.getFTAddr(address(myNFT));
         uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
 
         assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
-        
+
         deal(alice, 1000 ether);
         IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
         IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
@@ -50,7 +53,7 @@ contract NFTAMMTest is NFTAMMTestBase {
         vm.startPrank(alice);
         myNFT.approve(address(fragmentation), myNFT.getTokenId());
         fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
-        address FT = fragmentation.getFTAddr(address(myNFT));
+        FT = fragmentation.getFTAddr(address(myNFT));
         uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
         assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
         deal(DAI, alice, 100000);
@@ -107,10 +110,11 @@ contract NFTAMMTest is NFTAMMTestBase {
         nftAMM.swapToETH(FT, 100000, 1000);
     }
 
-    function test_NA_swapToETH_SliTooLarge_Fail()  returns () {
+    function test_NA_swapToETH_SliTooLarge_Fail() public {
         _addLiquidityWithETH();
         deal(FT, alice, 1000000);
         IERC20(FT).approve(address(nftAMM), 100000);
+
         nftAMM.swapToETH(FT, 100000, 1);
     }
 
@@ -140,7 +144,7 @@ contract NFTAMMTest is NFTAMMTestBase {
         vm.startPrank(alice);
         myNFT.approve(address(fragmentation), myNFT.getTokenId());
         fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
-        address FT = fragmentation.getFTAddr(address(myNFT));
+       FT = fragmentation.getFTAddr(address(myNFT));
         uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
         assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
         deal(alice, 1000 ether);
