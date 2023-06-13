@@ -22,6 +22,7 @@ contract NFTAMMTest is NFTAMMTestBase {
 
     function test_NA_receive_Success() public {
         deal(alice, 1000 ether);
+        vm.prank(alice);
     }
 
     function test_NA_addLiquidityWithETH_Success() public {
@@ -89,66 +90,66 @@ contract NFTAMMTest is NFTAMMTestBase {
     }
 
     function test_NA_swapWithETH_Success() public {
-        myNFT.safeMint(alice);
-        vm.startPrank(alice);
-        myNFT.approve(address(fragmentation), myNFT.getTokenId());
-        fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
-        address FT = fragmentation.getFTAddr(address(myNFT));
-        uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
-        assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
-        deal(alice, 1000 ether);
-        IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
-        IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
-        nftAMM.addLiquidityWithETH{value: 1 ether}(FT, ftBalanceAlice);
-
+        _addLiquidityWithETH();
         IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
         nftAMM.swapWithETH{value: 1 ether}(FT, 10000);
-
     }
 
     function test_NA_swapToETH_Success() public {
-        myNFT.safeMint(alice);
-        vm.startPrank(alice);
-        myNFT.approve(address(fragmentation), myNFT.getTokenId());
-        fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
-        address FT = fragmentation.getFTAddr(address(myNFT));
-        uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
-        assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
-        deal(alice, 1000 ether);
-        IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
-        IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
-        nftAMM.addLiquidityWithETH{value: 1 ether}(FT, ftBalanceAlice);
-
+        _addLiquidityWithETH();
         deal(FT, alice, 1000000);
         IERC20(FT).approve(address(nftAMM), 100000);
         nftAMM.swapToETH(FT, 100000, 1000);
     }
 
-    function test_NA_swap_Success() public {
-        deal(DAI, alice, 1 ether);
-        deal(USDC, alice, 1 ether);
-        vm.startPrank(alice);
-        IERC20(DAI).approve(address(nftAMM), 1 ether);
-        IERC20(USDC).approve(address(nftAMM), 1 ether);
-        nftAMM.addLiquidity(USDC, DAI, 0.5 ether, 0.5 ether);
+    function test_NA_swapToETH_SliTooLarge_Fail()  returns () {
+        _addLiquidityWithETH();
+        deal(FT, alice, 1000000);
+        IERC20(FT).approve(address(nftAMM), 100000);
+        nftAMM.swapToETH(FT, 100000, 1);
+    }
 
+    function test_NA_swap_Success() public {
+        _addLiquidity();
         IERC20(DAI).approve(address(nftAMM), 1 ether);
         IERC20(USDC).approve(address(nftAMM), 1 ether);
         nftAMM.swap(DAI, USDC, 0.0005 ether);
-
     }
 
     function test_NA_swapByLimitSli_Success() public {
-        deal(DAI, alice, 1 ether);
-        deal(USDC, alice, 1 ether);
-        vm.startPrank(alice);
-        IERC20(DAI).approve(address(nftAMM), 1 ether);
-        IERC20(USDC).approve(address(nftAMM), 1 ether);
-        nftAMM.addLiquidity(USDC, DAI, 0.5 ether, 0.5 ether);
-
+        _addLiquidity();
         IERC20(DAI).approve(address(nftAMM), 1 ether);
         IERC20(USDC).approve(address(nftAMM), 1 ether);
         nftAMM.swapByLimitSli(DAI, USDC, 0.0005 ether, 10000);
     }
 
+    function test_NA_swapByLimitSli_SliTooLarge_Fail() public {
+        _addLiquidity();
+        IERC20(DAI).approve(address(nftAMM), 1 ether);
+        IERC20(USDC).approve(address(nftAMM), 1 ether);
+        nftAMM.swapByLimitSli(DAI, USDC, 0.0005 ether, 10);
+    }
+
+    function _addLiquidityWithETH() private {
+        myNFT.safeMint(alice);
+        vm.startPrank(alice);
+        myNFT.approve(address(fragmentation), myNFT.getTokenId());
+        fragmentation.tearApartNFT(address(myNFT), myNFT.getTokenId());
+        address FT = fragmentation.getFTAddr(address(myNFT));
+        uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
+        assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
+        deal(alice, 1000 ether);
+        IERC20(nftAMM.WETHAddr()).approve(address(nftAMM), 1 ether);
+        IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
+        nftAMM.addLiquidityWithETH{value: 1 ether}(FT, ftBalanceAlice);
+    }
+
+    function _addLiquidity() private {
+        deal(DAI, alice, 1 ether);
+        deal(USDC, alice, 1 ether);
+        vm.startPrank(alice);
+        IERC20(DAI).approve(address(nftAMM), 1 ether);
+        IERC20(USDC).approve(address(nftAMM), 1 ether);
+        nftAMM.addLiquidity(USDC, DAI, 0.5 ether, 0.5 ether);
+    }
 }
