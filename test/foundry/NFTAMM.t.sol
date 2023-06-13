@@ -47,6 +47,18 @@ contract NFTAMMTest is NFTAMMTestBase {
         address FT = fragmentation.getFTAddr(address(myNFT));
         uint256 ftBalanceAlice = IERC20(FT).balanceOf(alice);
         assertEq(ftBalanceAlice, fragmentation.ONE_ETH() * 1000);
+        deal(DAI, alice, 100000);
+        IERC20(DAI).approve(address(nftAMM), 100000);
+        IERC20(FT).approve(address(nftAMM), ftBalanceAlice);
+        nftAMM.addLiquidityWithFT(FT, DAI, ftBalanceAlice, 100);
+    }
+
+    function test_NA_addLiquidity_Success() public {
+
+    }
+
+    function test_NA_removeLiquidity_Success() public {
+
     }
 
 }
