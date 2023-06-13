@@ -2298,7 +2298,7 @@
   },
   "ast": {
     "absolutePath": "test/foundry/NFTAMM.t.sol",
-    "id": 44050,
+    "id": 44085,
     "exportedSymbols": {
       "AccessControlUpgradeable": [
         33518
@@ -2436,7 +2436,7 @@
         3852
       ],
       "Imports": [
-        44718
+        45081
       ],
       "Initializable": [
         34125
@@ -2457,10 +2457,10 @@
         3018
       ],
       "NFTAMMTest": [
-        44049
+        44084
       ],
       "NFTAMMTestBase": [
-        44573
+        44936
       ],
       "Ownable": [
         36112
@@ -2469,7 +2469,7 @@
         36350
       ],
       "Router": [
-        44885
+        45248
       ],
       "SafeCast": [
         43595
@@ -2529,7 +2529,7 @@
         34261
       ],
       "Utils": [
-        44699
+        45062
       ],
       "Vm": [
         16830
@@ -2560,7 +2560,7 @@
     "src": "35:2237:86",
     "nodes": [
       {
-        "id": 43732,
+        "id": 43767,
         "nodeType": "PragmaDirective",
         "src": "35:24:86",
         "nodes": [],
@@ -2572,30 +2572,30 @@
         ]
       },
       {
-        "id": 43733,
+        "id": 43768,
         "nodeType": "ImportDirective",
         "src": "63:37:86",
         "nodes": [],
         "absolutePath": "test/foundry/utils/NFT-AMMTestBase.sol",
         "file": "./utils/NFT-AMMTestBase.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 44050,
-        "sourceUnit": 44574,
+        "scope": 44085,
+        "sourceUnit": 44937,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 44049,
+        "id": 44084,
         "nodeType": "ContractDefinition",
         "src": "104:2168:86",
         "nodes": [
           {
-            "id": 43742,
+            "id": 43777,
             "nodeType": "FunctionDefinition",
             "src": "151:51:86",
             "nodes": [],
             "body": {
-              "id": 43741,
+              "id": 43776,
               "nodeType": "Block",
               "src": "175:27:86",
               "nodes": [],
@@ -2605,18 +2605,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 43738,
+                      "id": 43773,
                       "name": "_setUp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 44572,
+                      "referencedDeclaration": 44935,
                       "src": "186:6:86",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 43739,
+                    "id": 43774,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2632,7 +2632,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43740,
+                  "id": 43775,
                   "nodeType": "ExpressionStatement",
                   "src": "186:8:86"
                 }
@@ -2645,29 +2645,29 @@
             "name": "setUp",
             "nameLocation": "160:5:86",
             "parameters": {
-              "id": 43736,
+              "id": 43771,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "165:2:86"
             },
             "returnParameters": {
-              "id": 43737,
+              "id": 43772,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "175:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 43820,
+            "id": 43855,
             "nodeType": "FunctionDefinition",
             "src": "210:432:86",
             "nodes": [],
             "body": {
-              "id": 43819,
+              "id": 43854,
               "nodeType": "Block",
               "src": "247:395:86",
               "nodes": [],
@@ -2680,18 +2680,18 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 43746,
+                            "id": 43781,
                             "name": "nftAMM",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44386,
+                            "referencedDeclaration": 44749,
                             "src": "267:6:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_NFTAMM_$3018",
                               "typeString": "contract NFTAMM"
                             }
                           },
-                          "id": 43747,
+                          "id": 43782,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2706,7 +2706,7 @@
                             "typeString": "function () view external returns (uint256)"
                           }
                         },
-                        "id": 43748,
+                        "id": 43783,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2727,14 +2727,14 @@
                           "typeIdentifier": "t_rational_1000000000000000000_by_1",
                           "typeString": "int_const 1000000000000000000"
                         },
-                        "id": 43751,
+                        "id": 43786,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "leftExpression": {
                           "hexValue": "3130",
-                          "id": 43749,
+                          "id": 43784,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2752,7 +2752,7 @@
                         "operator": "**",
                         "rightExpression": {
                           "hexValue": "3138",
-                          "id": 43750,
+                          "id": 43785,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2784,7 +2784,7 @@
                           "typeString": "int_const 1000000000000000000"
                         }
                       ],
-                      "id": 43745,
+                      "id": 43780,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2816,7 +2816,7 @@
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 43752,
+                    "id": 43787,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2832,7 +2832,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43753,
+                  "id": 43788,
                   "nodeType": "ExpressionStatement",
                   "src": "258:36:86"
                 },
@@ -2846,18 +2846,18 @@
                             "expression": {
                               "argumentTypes": [],
                               "expression": {
-                                "id": 43757,
+                                "id": 43792,
                                 "name": "nftAMM",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 44386,
+                                "referencedDeclaration": 44749,
                                 "src": "322:6:86",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_NFTAMM_$3018",
                                   "typeString": "contract NFTAMM"
                                 }
                               },
-                              "id": 43758,
+                              "id": 43793,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2872,7 +2872,7 @@
                                 "typeString": "function () view external returns (contract IWETH)"
                               }
                             },
-                            "id": 43759,
+                            "id": 43794,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2896,7 +2896,7 @@
                               "typeString": "contract IWETH"
                             }
                           ],
-                          "id": 43756,
+                          "id": 43791,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2908,14 +2908,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43755,
+                            "id": 43790,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "314:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43760,
+                        "id": 43795,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2934,11 +2934,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43763,
+                            "id": 43798,
                             "name": "weth",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44374,
+                            "referencedDeclaration": 44737,
                             "src": "346:4:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_WETH_$3566",
@@ -2953,7 +2953,7 @@
                               "typeString": "contract WETH"
                             }
                           ],
-                          "id": 43762,
+                          "id": 43797,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2965,14 +2965,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43761,
+                            "id": 43796,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "338:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43764,
+                        "id": 43799,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3000,7 +3000,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 43754,
+                      "id": 43789,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3032,7 +3032,7 @@
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 43765,
+                    "id": 43800,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3048,7 +3048,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43766,
+                  "id": 43801,
                   "nodeType": "ExpressionStatement",
                   "src": "305:47:86"
                 },
@@ -3062,18 +3062,18 @@
                             "expression": {
                               "argumentTypes": [],
                               "expression": {
-                                "id": 43770,
+                                "id": 43805,
                                 "name": "nftAMM",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 44386,
+                                "referencedDeclaration": 44749,
                                 "src": "380:6:86",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_NFTAMM_$3018",
                                   "typeString": "contract NFTAMM"
                                 }
                               },
-                              "id": 43771,
+                              "id": 43806,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3088,7 +3088,7 @@
                                 "typeString": "function () view external returns (contract IFragmentation)"
                               }
                             },
-                            "id": 43772,
+                            "id": 43807,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3112,7 +3112,7 @@
                               "typeString": "contract IFragmentation"
                             }
                           ],
-                          "id": 43769,
+                          "id": 43804,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3124,14 +3124,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43768,
+                            "id": 43803,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "372:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43773,
+                        "id": 43808,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3150,11 +3150,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43776,
+                            "id": 43811,
                             "name": "fragmentation",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44377,
+                            "referencedDeclaration": 44740,
                             "src": "413:13:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Fragmentation_$1119",
@@ -3169,7 +3169,7 @@
                               "typeString": "contract Fragmentation"
                             }
                           ],
-                          "id": 43775,
+                          "id": 43810,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3181,14 +3181,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43774,
+                            "id": 43809,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "405:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43777,
+                        "id": 43812,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3216,7 +3216,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 43767,
+                      "id": 43802,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3248,7 +3248,7 @@
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 43778,
+                    "id": 43813,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3264,7 +3264,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43779,
+                  "id": 43814,
                   "nodeType": "ExpressionStatement",
                   "src": "363:65:86"
                 },
@@ -3278,18 +3278,18 @@
                             "expression": {
                               "argumentTypes": [],
                               "expression": {
-                                "id": 43783,
+                                "id": 43818,
                                 "name": "nftAMM",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 44386,
+                                "referencedDeclaration": 44749,
                                 "src": "456:6:86",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_NFTAMM_$3018",
                                   "typeString": "contract NFTAMM"
                                 }
                               },
-                              "id": 43784,
+                              "id": 43819,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3304,7 +3304,7 @@
                                 "typeString": "function () view external returns (contract IFTCalculate)"
                               }
                             },
-                            "id": 43785,
+                            "id": 43820,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3328,7 +3328,7 @@
                               "typeString": "contract IFTCalculate"
                             }
                           ],
-                          "id": 43782,
+                          "id": 43817,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3340,14 +3340,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43781,
+                            "id": 43816,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "448:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43786,
+                        "id": 43821,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3366,11 +3366,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43789,
+                            "id": 43824,
                             "name": "calculate",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44380,
+                            "referencedDeclaration": 44743,
                             "src": "485:9:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_FTCalculate_$735",
@@ -3385,7 +3385,7 @@
                               "typeString": "contract FTCalculate"
                             }
                           ],
-                          "id": 43788,
+                          "id": 43823,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3397,14 +3397,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43787,
+                            "id": 43822,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "477:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43790,
+                        "id": 43825,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3432,7 +3432,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 43780,
+                      "id": 43815,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3464,7 +3464,7 @@
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 43791,
+                    "id": 43826,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3480,7 +3480,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43792,
+                  "id": 43827,
                   "nodeType": "ExpressionStatement",
                   "src": "439:57:86"
                 },
@@ -3494,18 +3494,18 @@
                             "expression": {
                               "argumentTypes": [],
                               "expression": {
-                                "id": 43796,
+                                "id": 43831,
                                 "name": "nftAMM",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 44386,
+                                "referencedDeclaration": 44749,
                                 "src": "524:6:86",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_NFTAMM_$3018",
                                   "typeString": "contract NFTAMM"
                                 }
                               },
-                              "id": 43797,
+                              "id": 43832,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3520,7 +3520,7 @@
                                 "typeString": "function () view external returns (address)"
                               }
                             },
-                            "id": 43798,
+                            "id": 43833,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3544,7 +3544,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 43795,
+                          "id": 43830,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3556,14 +3556,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43794,
+                            "id": 43829,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "516:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43799,
+                        "id": 43834,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3582,11 +3582,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43802,
+                            "id": 43837,
                             "name": "weth",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44374,
+                            "referencedDeclaration": 44737,
                             "src": "552:4:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_WETH_$3566",
@@ -3601,7 +3601,7 @@
                               "typeString": "contract WETH"
                             }
                           ],
-                          "id": 43801,
+                          "id": 43836,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3613,14 +3613,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43800,
+                            "id": 43835,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "544:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43803,
+                        "id": 43838,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3648,7 +3648,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 43793,
+                      "id": 43828,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3680,7 +3680,7 @@
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 43804,
+                    "id": 43839,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3696,7 +3696,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43805,
+                  "id": 43840,
                   "nodeType": "ExpressionStatement",
                   "src": "507:51:86"
                 },
@@ -3710,18 +3710,18 @@
                             "expression": {
                               "argumentTypes": [],
                               "expression": {
-                                "id": 43809,
+                                "id": 43844,
                                 "name": "nftAMM",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 44386,
+                                "referencedDeclaration": 44749,
                                 "src": "586:6:86",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_NFTAMM_$3018",
                                   "typeString": "contract NFTAMM"
                                 }
                               },
-                              "id": 43810,
+                              "id": 43845,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3736,7 +3736,7 @@
                                 "typeString": "function () view external returns (address)"
                               }
                             },
-                            "id": 43811,
+                            "id": 43846,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3760,7 +3760,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 43808,
+                          "id": 43843,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3772,14 +3772,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43807,
+                            "id": 43842,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "578:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43812,
+                        "id": 43847,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3798,11 +3798,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43815,
+                            "id": 43850,
                             "name": "fund",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44383,
+                            "referencedDeclaration": 44746,
                             "src": "618:4:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_FundContract_$1178",
@@ -3817,7 +3817,7 @@
                               "typeString": "contract FundContract"
                             }
                           ],
-                          "id": 43814,
+                          "id": 43849,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3829,14 +3829,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43813,
+                            "id": 43848,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "610:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43816,
+                        "id": 43851,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3864,7 +3864,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 43806,
+                      "id": 43841,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3896,7 +3896,7 @@
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 43817,
+                    "id": 43852,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3912,7 +3912,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43818,
+                  "id": 43853,
                   "nodeType": "ExpressionStatement",
                   "src": "569:55:86"
                 }
@@ -3925,29 +3925,29 @@
             "name": "test_NA_Deployment",
             "nameLocation": "219:18:86",
             "parameters": {
-              "id": 43743,
+              "id": 43778,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "237:2:86"
             },
             "returnParameters": {
-              "id": 43744,
+              "id": 43779,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "247:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 43829,
+            "id": 43864,
             "nodeType": "FunctionDefinition",
             "src": "650:84:86",
             "nodes": [],
             "body": {
-              "id": 43828,
+              "id": 43863,
               "nodeType": "Block",
               "src": "692:42:86",
               "nodes": [],
@@ -3956,11 +3956,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43824,
+                        "id": 43859,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "708:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -3969,7 +3969,7 @@
                       },
                       {
                         "hexValue": "31303030",
-                        "id": 43825,
+                        "id": 43860,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3996,7 +3996,7 @@
                           "typeString": "int_const 1000000000000000000000"
                         }
                       ],
-                      "id": 43823,
+                      "id": 43858,
                       "name": "deal",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -4011,7 +4011,7 @@
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 43826,
+                    "id": 43861,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4027,7 +4027,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43827,
+                  "id": 43862,
                   "nodeType": "ExpressionStatement",
                   "src": "703:23:86"
                 }
@@ -4040,29 +4040,29 @@
             "name": "test_NA_receive_Success",
             "nameLocation": "659:23:86",
             "parameters": {
-              "id": 43821,
+              "id": 43856,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "682:2:86"
             },
             "returnParameters": {
-              "id": 43822,
+              "id": 43857,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "692:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 43935,
+            "id": 43970,
             "nodeType": "FunctionDefinition",
             "src": "742:708:86",
             "nodes": [],
             "body": {
-              "id": 43934,
+              "id": 43969,
               "nodeType": "Block",
               "src": "796:654:86",
               "nodes": [],
@@ -4071,11 +4071,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43835,
+                        "id": 43870,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "822:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4091,18 +4091,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43832,
+                        "id": 43867,
                         "name": "myNFT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44401,
+                        "referencedDeclaration": 44764,
                         "src": "807:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_MyNFT_$1284",
                           "typeString": "contract MyNFT"
                         }
                       },
-                      "id": 43834,
+                      "id": 43869,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4117,7 +4117,7 @@
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 43836,
+                    "id": 43871,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4133,7 +4133,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43837,
+                  "id": 43872,
                   "nodeType": "ExpressionStatement",
                   "src": "807:21:86"
                 },
@@ -4141,11 +4141,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43841,
+                        "id": 43876,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "853:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4161,7 +4161,7 @@
                         }
                       ],
                       "expression": {
-                        "id": 43838,
+                        "id": 43873,
                         "name": "vm",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -4172,7 +4172,7 @@
                           "typeString": "contract Vm"
                         }
                       },
-                      "id": 43840,
+                      "id": 43875,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4187,7 +4187,7 @@
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 43842,
+                    "id": 43877,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4203,7 +4203,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43843,
+                  "id": 43878,
                   "nodeType": "ExpressionStatement",
                   "src": "839:20:86"
                 },
@@ -4213,11 +4213,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43849,
+                            "id": 43884,
                             "name": "fragmentation",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44377,
+                            "referencedDeclaration": 44740,
                             "src": "892:13:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Fragmentation_$1119",
@@ -4232,7 +4232,7 @@
                               "typeString": "contract Fragmentation"
                             }
                           ],
-                          "id": 43848,
+                          "id": 43883,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4244,14 +4244,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43847,
+                            "id": 43882,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "884:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43850,
+                        "id": 43885,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4272,18 +4272,18 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 43851,
+                            "id": 43886,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "908:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
                               "typeString": "contract MyNFT"
                             }
                           },
-                          "id": 43852,
+                          "id": 43887,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4298,7 +4298,7 @@
                             "typeString": "function () external returns (uint256)"
                           }
                         },
-                        "id": 43853,
+                        "id": 43888,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4327,18 +4327,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43844,
+                        "id": 43879,
                         "name": "myNFT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44401,
+                        "referencedDeclaration": 44764,
                         "src": "870:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_MyNFT_$1284",
                           "typeString": "contract MyNFT"
                         }
                       },
-                      "id": 43846,
+                      "id": 43881,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4353,7 +4353,7 @@
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 43854,
+                    "id": 43889,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4369,7 +4369,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43855,
+                  "id": 43890,
                   "nodeType": "ExpressionStatement",
                   "src": "870:57:86"
                 },
@@ -4379,11 +4379,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43861,
+                            "id": 43896,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "973:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
@@ -4398,7 +4398,7 @@
                               "typeString": "contract MyNFT"
                             }
                           ],
-                          "id": 43860,
+                          "id": 43895,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4410,14 +4410,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43859,
+                            "id": 43894,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "965:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43862,
+                        "id": 43897,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4438,18 +4438,18 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 43863,
+                            "id": 43898,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "981:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
                               "typeString": "contract MyNFT"
                             }
                           },
-                          "id": 43864,
+                          "id": 43899,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4464,7 +4464,7 @@
                             "typeString": "function () external returns (uint256)"
                           }
                         },
-                        "id": 43865,
+                        "id": 43900,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4493,18 +4493,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43856,
+                        "id": 43891,
                         "name": "fragmentation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44377,
+                        "referencedDeclaration": 44740,
                         "src": "938:13:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Fragmentation_$1119",
                           "typeString": "contract Fragmentation"
                         }
                       },
-                      "id": 43858,
+                      "id": 43893,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4519,7 +4519,7 @@
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 43866,
+                    "id": 43901,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4535,23 +4535,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43867,
+                  "id": 43902,
                   "nodeType": "ExpressionStatement",
                   "src": "938:62:86"
                 },
                 {
                   "assignments": [
-                    43869
+                    43904
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 43869,
+                      "id": 43904,
                       "mutability": "mutable",
                       "name": "FT",
                       "nameLocation": "1019:2:86",
                       "nodeType": "VariableDeclaration",
-                      "scope": 43934,
+                      "scope": 43969,
                       "src": "1011:10:86",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4560,7 +4560,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 43868,
+                        "id": 43903,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "1011:7:86",
@@ -4573,17 +4573,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 43877,
+                  "id": 43912,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 43874,
+                            "id": 43909,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "1056:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
@@ -4598,7 +4598,7 @@
                               "typeString": "contract MyNFT"
                             }
                           ],
-                          "id": 43873,
+                          "id": 43908,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4610,14 +4610,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43872,
+                            "id": 43907,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1048:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43875,
+                        "id": 43910,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4642,18 +4642,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43870,
+                        "id": 43905,
                         "name": "fragmentation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44377,
+                        "referencedDeclaration": 44740,
                         "src": "1024:13:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Fragmentation_$1119",
                           "typeString": "contract Fragmentation"
                         }
                       },
-                      "id": 43871,
+                      "id": 43906,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4668,7 +4668,7 @@
                         "typeString": "function (address) view external returns (address)"
                       }
                     },
-                    "id": 43876,
+                    "id": 43911,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4689,17 +4689,17 @@
                 },
                 {
                   "assignments": [
-                    43879
+                    43914
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 43879,
+                      "id": 43914,
                       "mutability": "mutable",
                       "name": "ftBalanceAlice",
                       "nameLocation": "1082:14:86",
                       "nodeType": "VariableDeclaration",
-                      "scope": 43934,
+                      "scope": 43969,
                       "src": "1074:22:86",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4708,7 +4708,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 43878,
+                        "id": 43913,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1074:7:86",
@@ -4720,15 +4720,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 43886,
+                  "id": 43921,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 43884,
+                        "id": 43919,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "1120:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4746,11 +4746,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 43881,
+                            "id": 43916,
                             "name": "FT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 43869,
+                            "referencedDeclaration": 43904,
                             "src": "1106:2:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -4765,7 +4765,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 43880,
+                          "id": 43915,
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -4776,7 +4776,7 @@
                             "typeString": "type(contract IERC20)"
                           }
                         },
-                        "id": 43882,
+                        "id": 43917,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4792,7 +4792,7 @@
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 43883,
+                      "id": 43918,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4807,7 +4807,7 @@
                         "typeString": "function (address) view external returns (uint256)"
                       }
                     },
-                    "id": 43885,
+                    "id": 43920,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4830,11 +4830,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43888,
+                        "id": 43923,
                         "name": "ftBalanceAlice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43879,
+                        "referencedDeclaration": 43914,
                         "src": "1146:14:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4846,7 +4846,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 43893,
+                        "id": 43928,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4856,18 +4856,18 @@
                           "expression": {
                             "argumentTypes": [],
                             "expression": {
-                              "id": 43889,
+                              "id": 43924,
                               "name": "fragmentation",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 44377,
+                              "referencedDeclaration": 44740,
                               "src": "1162:13:86",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Fragmentation_$1119",
                                 "typeString": "contract Fragmentation"
                               }
                             },
-                            "id": 43890,
+                            "id": 43925,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -4882,7 +4882,7 @@
                               "typeString": "function () view external returns (uint256)"
                             }
                           },
-                          "id": 43891,
+                          "id": 43926,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4902,7 +4902,7 @@
                         "operator": "*",
                         "rightExpression": {
                           "hexValue": "31303030",
-                          "id": 43892,
+                          "id": 43927,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4934,7 +4934,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 43887,
+                      "id": 43922,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -4966,7 +4966,7 @@
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 43894,
+                    "id": 43929,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4982,7 +4982,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43895,
+                  "id": 43930,
                   "nodeType": "ExpressionStatement",
                   "src": "1137:56:86"
                 },
@@ -4990,11 +4990,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43897,
+                        "id": 43932,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "1209:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -5003,7 +5003,7 @@
                       },
                       {
                         "hexValue": "31303030",
-                        "id": 43898,
+                        "id": 43933,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -5030,7 +5030,7 @@
                           "typeString": "int_const 1000000000000000000000"
                         }
                       ],
-                      "id": 43896,
+                      "id": 43931,
                       "name": "deal",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -5045,7 +5045,7 @@
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 43899,
+                    "id": 43934,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5061,7 +5061,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43900,
+                  "id": 43935,
                   "nodeType": "ExpressionStatement",
                   "src": "1204:23:86"
                 },
@@ -5071,11 +5071,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43909,
+                            "id": 43944,
                             "name": "nftAMM",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44386,
+                            "referencedDeclaration": 44749,
                             "src": "1280:6:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_NFTAMM_$3018",
@@ -5090,7 +5090,7 @@
                               "typeString": "contract NFTAMM"
                             }
                           ],
-                          "id": 43908,
+                          "id": 43943,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -5102,14 +5102,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43907,
+                            "id": 43942,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1272:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43910,
+                        "id": 43945,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5127,7 +5127,7 @@
                       },
                       {
                         "hexValue": "31",
-                        "id": 43911,
+                        "id": 43946,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -5161,18 +5161,18 @@
                             "expression": {
                               "argumentTypes": [],
                               "expression": {
-                                "id": 43902,
+                                "id": 43937,
                                 "name": "nftAMM",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 44386,
+                                "referencedDeclaration": 44749,
                                 "src": "1245:6:86",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_NFTAMM_$3018",
                                   "typeString": "contract NFTAMM"
                                 }
                               },
-                              "id": 43903,
+                              "id": 43938,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -5187,7 +5187,7 @@
                                 "typeString": "function () view external returns (address)"
                               }
                             },
-                            "id": 43904,
+                            "id": 43939,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -5211,7 +5211,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 43901,
+                          "id": 43936,
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -5222,7 +5222,7 @@
                             "typeString": "type(contract IERC20)"
                           }
                         },
-                        "id": 43905,
+                        "id": 43940,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5238,7 +5238,7 @@
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 43906,
+                      "id": 43941,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5253,7 +5253,7 @@
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 43912,
+                    "id": 43947,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5269,7 +5269,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 43913,
+                  "id": 43948,
                   "nodeType": "ExpressionStatement",
                   "src": "1238:59:86"
                 },
@@ -5279,11 +5279,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43920,
+                            "id": 43955,
                             "name": "nftAMM",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44386,
+                            "referencedDeclaration": 44749,
                             "src": "1335:6:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_NFTAMM_$3018",
@@ -5298,7 +5298,7 @@
                               "typeString": "contract NFTAMM"
                             }
                           ],
-                          "id": 43919,
+                          "id": 43954,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -5310,14 +5310,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43918,
+                            "id": 43953,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1327:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43921,
+                        "id": 43956,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5334,11 +5334,11 @@
                         }
                       },
                       {
-                        "id": 43922,
+                        "id": 43957,
                         "name": "ftBalanceAlice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43879,
+                        "referencedDeclaration": 43914,
                         "src": "1344:14:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5360,11 +5360,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 43915,
+                            "id": 43950,
                             "name": "FT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 43869,
+                            "referencedDeclaration": 43904,
                             "src": "1315:2:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -5379,7 +5379,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 43914,
+                          "id": 43949,
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -5390,7 +5390,7 @@
                             "typeString": "type(contract IERC20)"
                           }
                         },
-                        "id": 43916,
+                        "id": 43951,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5406,7 +5406,7 @@
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 43917,
+                      "id": 43952,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5421,7 +5421,7 @@
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 43923,
+                    "id": 43958,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5437,7 +5437,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 43924,
+                  "id": 43959,
                   "nodeType": "ExpressionStatement",
                   "src": "1308:51:86"
                 },
@@ -5445,11 +5445,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43930,
+                        "id": 43965,
                         "name": "FT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43869,
+                        "referencedDeclaration": 43904,
                         "src": "1413:2:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -5457,11 +5457,11 @@
                         }
                       },
                       {
-                        "id": 43931,
+                        "id": 43966,
                         "name": "ftBalanceAlice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43879,
+                        "referencedDeclaration": 43914,
                         "src": "1417:14:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5492,18 +5492,18 @@
                           }
                         ],
                         "expression": {
-                          "id": 43925,
+                          "id": 43960,
                           "name": "nftAMM",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 44386,
+                          "referencedDeclaration": 44749,
                           "src": "1370:6:86",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_NFTAMM_$3018",
                             "typeString": "contract NFTAMM"
                           }
                         },
-                        "id": 43927,
+                        "id": 43962,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5518,7 +5518,7 @@
                           "typeString": "function (address,uint256) payable external"
                         }
                       },
-                      "id": 43929,
+                      "id": 43964,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5530,7 +5530,7 @@
                       "options": [
                         {
                           "hexValue": "31",
-                          "id": 43928,
+                          "id": 43963,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -5552,7 +5552,7 @@
                         "typeString": "function (address,uint256) payable external"
                       }
                     },
-                    "id": 43932,
+                    "id": 43967,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5568,7 +5568,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43933,
+                  "id": 43968,
                   "nodeType": "ExpressionStatement",
                   "src": "1370:62:86"
                 }
@@ -5581,29 +5581,29 @@
             "name": "test_NA_addLiquidityWithETH_Success",
             "nameLocation": "751:35:86",
             "parameters": {
-              "id": 43830,
+              "id": 43865,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "786:2:86"
             },
             "returnParameters": {
-              "id": 43831,
+              "id": 43866,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "796:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 44040,
+            "id": 44075,
             "nodeType": "FunctionDefinition",
             "src": "1458:676:86",
             "nodes": [],
             "body": {
-              "id": 44039,
+              "id": 44074,
               "nodeType": "Block",
               "src": "1511:623:86",
               "nodes": [],
@@ -5612,11 +5612,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43941,
+                        "id": 43976,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "1537:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -5632,18 +5632,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43938,
+                        "id": 43973,
                         "name": "myNFT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44401,
+                        "referencedDeclaration": 44764,
                         "src": "1522:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_MyNFT_$1284",
                           "typeString": "contract MyNFT"
                         }
                       },
-                      "id": 43940,
+                      "id": 43975,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5658,7 +5658,7 @@
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 43942,
+                    "id": 43977,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5674,7 +5674,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43943,
+                  "id": 43978,
                   "nodeType": "ExpressionStatement",
                   "src": "1522:21:86"
                 },
@@ -5682,11 +5682,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43947,
+                        "id": 43982,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "1568:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -5702,7 +5702,7 @@
                         }
                       ],
                       "expression": {
-                        "id": 43944,
+                        "id": 43979,
                         "name": "vm",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5713,7 +5713,7 @@
                           "typeString": "contract Vm"
                         }
                       },
-                      "id": 43946,
+                      "id": 43981,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5728,7 +5728,7 @@
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 43948,
+                    "id": 43983,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5744,7 +5744,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43949,
+                  "id": 43984,
                   "nodeType": "ExpressionStatement",
                   "src": "1554:20:86"
                 },
@@ -5754,11 +5754,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43955,
+                            "id": 43990,
                             "name": "fragmentation",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44377,
+                            "referencedDeclaration": 44740,
                             "src": "1607:13:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Fragmentation_$1119",
@@ -5773,7 +5773,7 @@
                               "typeString": "contract Fragmentation"
                             }
                           ],
-                          "id": 43954,
+                          "id": 43989,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -5785,14 +5785,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43953,
+                            "id": 43988,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1599:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43956,
+                        "id": 43991,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5813,18 +5813,18 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 43957,
+                            "id": 43992,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "1623:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
                               "typeString": "contract MyNFT"
                             }
                           },
-                          "id": 43958,
+                          "id": 43993,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -5839,7 +5839,7 @@
                             "typeString": "function () external returns (uint256)"
                           }
                         },
-                        "id": 43959,
+                        "id": 43994,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5868,18 +5868,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43950,
+                        "id": 43985,
                         "name": "myNFT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44401,
+                        "referencedDeclaration": 44764,
                         "src": "1585:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_MyNFT_$1284",
                           "typeString": "contract MyNFT"
                         }
                       },
-                      "id": 43952,
+                      "id": 43987,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5894,7 +5894,7 @@
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 43960,
+                    "id": 43995,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5910,7 +5910,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43961,
+                  "id": 43996,
                   "nodeType": "ExpressionStatement",
                   "src": "1585:57:86"
                 },
@@ -5920,11 +5920,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 43967,
+                            "id": 44002,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "1688:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
@@ -5939,7 +5939,7 @@
                               "typeString": "contract MyNFT"
                             }
                           ],
-                          "id": 43966,
+                          "id": 44001,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -5951,14 +5951,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43965,
+                            "id": 44000,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1680:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43968,
+                        "id": 44003,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5979,18 +5979,18 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 43969,
+                            "id": 44004,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "1696:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
                               "typeString": "contract MyNFT"
                             }
                           },
-                          "id": 43970,
+                          "id": 44005,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -6005,7 +6005,7 @@
                             "typeString": "function () external returns (uint256)"
                           }
                         },
-                        "id": 43971,
+                        "id": 44006,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6034,18 +6034,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43962,
+                        "id": 43997,
                         "name": "fragmentation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44377,
+                        "referencedDeclaration": 44740,
                         "src": "1653:13:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Fragmentation_$1119",
                           "typeString": "contract Fragmentation"
                         }
                       },
-                      "id": 43964,
+                      "id": 43999,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -6060,7 +6060,7 @@
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 43972,
+                    "id": 44007,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6076,23 +6076,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 43973,
+                  "id": 44008,
                   "nodeType": "ExpressionStatement",
                   "src": "1653:62:86"
                 },
                 {
                   "assignments": [
-                    43975
+                    44010
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 43975,
+                      "id": 44010,
                       "mutability": "mutable",
                       "name": "FT",
                       "nameLocation": "1734:2:86",
                       "nodeType": "VariableDeclaration",
-                      "scope": 44039,
+                      "scope": 44074,
                       "src": "1726:10:86",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -6101,7 +6101,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 43974,
+                        "id": 44009,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "1726:7:86",
@@ -6114,17 +6114,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 43983,
+                  "id": 44018,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 43980,
+                            "id": 44015,
                             "name": "myNFT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44401,
+                            "referencedDeclaration": 44764,
                             "src": "1771:5:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_MyNFT_$1284",
@@ -6139,7 +6139,7 @@
                               "typeString": "contract MyNFT"
                             }
                           ],
-                          "id": 43979,
+                          "id": 44014,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -6151,14 +6151,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 43978,
+                            "id": 44013,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1763:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 43981,
+                        "id": 44016,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6183,18 +6183,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 43976,
+                        "id": 44011,
                         "name": "fragmentation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44377,
+                        "referencedDeclaration": 44740,
                         "src": "1739:13:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Fragmentation_$1119",
                           "typeString": "contract Fragmentation"
                         }
                       },
-                      "id": 43977,
+                      "id": 44012,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -6209,7 +6209,7 @@
                         "typeString": "function (address) view external returns (address)"
                       }
                     },
-                    "id": 43982,
+                    "id": 44017,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6230,17 +6230,17 @@
                 },
                 {
                   "assignments": [
-                    43985
+                    44020
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 43985,
+                      "id": 44020,
                       "mutability": "mutable",
                       "name": "ftBalanceAlice",
                       "nameLocation": "1797:14:86",
                       "nodeType": "VariableDeclaration",
-                      "scope": 44039,
+                      "scope": 44074,
                       "src": "1789:22:86",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -6249,7 +6249,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 43984,
+                        "id": 44019,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1789:7:86",
@@ -6261,15 +6261,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 43992,
+                  "id": 44027,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 43990,
+                        "id": 44025,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "1835:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -6287,11 +6287,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 43987,
+                            "id": 44022,
                             "name": "FT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 43975,
+                            "referencedDeclaration": 44010,
                             "src": "1821:2:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -6306,7 +6306,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 43986,
+                          "id": 44021,
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -6317,7 +6317,7 @@
                             "typeString": "type(contract IERC20)"
                           }
                         },
-                        "id": 43988,
+                        "id": 44023,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6333,7 +6333,7 @@
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 43989,
+                      "id": 44024,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -6348,7 +6348,7 @@
                         "typeString": "function (address) view external returns (uint256)"
                       }
                     },
-                    "id": 43991,
+                    "id": 44026,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6371,11 +6371,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 43994,
+                        "id": 44029,
                         "name": "ftBalanceAlice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43985,
+                        "referencedDeclaration": 44020,
                         "src": "1861:14:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -6387,7 +6387,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 43999,
+                        "id": 44034,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6397,18 +6397,18 @@
                           "expression": {
                             "argumentTypes": [],
                             "expression": {
-                              "id": 43995,
+                              "id": 44030,
                               "name": "fragmentation",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 44377,
+                              "referencedDeclaration": 44740,
                               "src": "1877:13:86",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Fragmentation_$1119",
                                 "typeString": "contract Fragmentation"
                               }
                             },
-                            "id": 43996,
+                            "id": 44031,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -6423,7 +6423,7 @@
                               "typeString": "function () view external returns (uint256)"
                             }
                           },
-                          "id": 43997,
+                          "id": 44032,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -6443,7 +6443,7 @@
                         "operator": "*",
                         "rightExpression": {
                           "hexValue": "31303030",
-                          "id": 43998,
+                          "id": 44033,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -6475,7 +6475,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 43993,
+                      "id": 44028,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -6507,7 +6507,7 @@
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 44000,
+                    "id": 44035,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6523,7 +6523,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 44001,
+                  "id": 44036,
                   "nodeType": "ExpressionStatement",
                   "src": "1852:56:86"
                 },
@@ -6531,11 +6531,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 44003,
+                        "id": 44038,
                         "name": "DAI",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44404,
+                        "referencedDeclaration": 44767,
                         "src": "1924:3:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -6543,11 +6543,11 @@
                         }
                       },
                       {
-                        "id": 44004,
+                        "id": 44039,
                         "name": "alice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44415,
+                        "referencedDeclaration": 44778,
                         "src": "1929:5:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -6556,7 +6556,7 @@
                       },
                       {
                         "hexValue": "313030303030",
-                        "id": 44005,
+                        "id": 44040,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -6586,7 +6586,7 @@
                           "typeString": "int_const 100000"
                         }
                       ],
-                      "id": 44002,
+                      "id": 44037,
                       "name": "deal",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -6601,7 +6601,7 @@
                         "typeString": "function (address,address,uint256)"
                       }
                     },
-                    "id": 44006,
+                    "id": 44041,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6617,7 +6617,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 44007,
+                  "id": 44042,
                   "nodeType": "ExpressionStatement",
                   "src": "1919:24:86"
                 },
@@ -6627,11 +6627,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 44014,
+                            "id": 44049,
                             "name": "nftAMM",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44386,
+                            "referencedDeclaration": 44749,
                             "src": "1982:6:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_NFTAMM_$3018",
@@ -6646,7 +6646,7 @@
                               "typeString": "contract NFTAMM"
                             }
                           ],
-                          "id": 44013,
+                          "id": 44048,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -6658,14 +6658,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 44012,
+                            "id": 44047,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1974:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 44015,
+                        "id": 44050,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6683,7 +6683,7 @@
                       },
                       {
                         "hexValue": "313030303030",
-                        "id": 44016,
+                        "id": 44051,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -6712,11 +6712,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 44009,
+                            "id": 44044,
                             "name": "DAI",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44404,
+                            "referencedDeclaration": 44767,
                             "src": "1961:3:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -6731,7 +6731,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 44008,
+                          "id": 44043,
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -6742,7 +6742,7 @@
                             "typeString": "type(contract IERC20)"
                           }
                         },
-                        "id": 44010,
+                        "id": 44045,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -6758,7 +6758,7 @@
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 44011,
+                      "id": 44046,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -6773,7 +6773,7 @@
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 44017,
+                    "id": 44052,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6789,7 +6789,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 44018,
+                  "id": 44053,
                   "nodeType": "ExpressionStatement",
                   "src": "1954:44:86"
                 },
@@ -6799,11 +6799,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 44025,
+                            "id": 44060,
                             "name": "nftAMM",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 44386,
+                            "referencedDeclaration": 44749,
                             "src": "2036:6:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_NFTAMM_$3018",
@@ -6818,7 +6818,7 @@
                               "typeString": "contract NFTAMM"
                             }
                           ],
-                          "id": 44024,
+                          "id": 44059,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -6830,14 +6830,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 44023,
+                            "id": 44058,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "2028:7:86",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 44026,
+                        "id": 44061,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6854,11 +6854,11 @@
                         }
                       },
                       {
-                        "id": 44027,
+                        "id": 44062,
                         "name": "ftBalanceAlice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43985,
+                        "referencedDeclaration": 44020,
                         "src": "2045:14:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -6880,11 +6880,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 44020,
+                            "id": 44055,
                             "name": "FT",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 43975,
+                            "referencedDeclaration": 44010,
                             "src": "2016:2:86",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -6899,7 +6899,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 44019,
+                          "id": 44054,
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -6910,7 +6910,7 @@
                             "typeString": "type(contract IERC20)"
                           }
                         },
-                        "id": 44021,
+                        "id": 44056,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6926,7 +6926,7 @@
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 44022,
+                      "id": 44057,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -6941,7 +6941,7 @@
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 44028,
+                    "id": 44063,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6957,7 +6957,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 44029,
+                  "id": 44064,
                   "nodeType": "ExpressionStatement",
                   "src": "2009:51:86"
                 },
@@ -6965,11 +6965,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 44033,
+                        "id": 44068,
                         "name": "FT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43975,
+                        "referencedDeclaration": 44010,
                         "src": "2097:2:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -6977,11 +6977,11 @@
                         }
                       },
                       {
-                        "id": 44034,
+                        "id": 44069,
                         "name": "DAI",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44404,
+                        "referencedDeclaration": 44767,
                         "src": "2101:3:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -6989,11 +6989,11 @@
                         }
                       },
                       {
-                        "id": 44035,
+                        "id": 44070,
                         "name": "ftBalanceAlice",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43985,
+                        "referencedDeclaration": 44020,
                         "src": "2106:14:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -7002,7 +7002,7 @@
                       },
                       {
                         "hexValue": "313030",
-                        "id": 44036,
+                        "id": 44071,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -7037,18 +7037,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 44030,
+                        "id": 44065,
                         "name": "nftAMM",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 44386,
+                        "referencedDeclaration": 44749,
                         "src": "2071:6:86",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_NFTAMM_$3018",
                           "typeString": "contract NFTAMM"
                         }
                       },
-                      "id": 44032,
+                      "id": 44067,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -7063,7 +7063,7 @@
                         "typeString": "function (address,address,uint256,uint256) external"
                       }
                     },
-                    "id": 44037,
+                    "id": 44072,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7079,7 +7079,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 44038,
+                  "id": 44073,
                   "nodeType": "ExpressionStatement",
                   "src": "2071:55:86"
                 }
@@ -7092,29 +7092,29 @@
             "name": "test_NA_addLiquidityWithFT_Success",
             "nameLocation": "1467:34:86",
             "parameters": {
-              "id": 43936,
+              "id": 43971,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1501:2:86"
             },
             "returnParameters": {
-              "id": 43937,
+              "id": 43972,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1511:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 44044,
+            "id": 44079,
             "nodeType": "FunctionDefinition",
             "src": "2142:57:86",
             "nodes": [],
             "body": {
-              "id": 44043,
+              "id": 44078,
               "nodeType": "Block",
               "src": "2189:10:86",
               "nodes": [],
@@ -7127,29 +7127,29 @@
             "name": "test_NA_addLiquidity_Success",
             "nameLocation": "2151:28:86",
             "parameters": {
-              "id": 44041,
+              "id": 44076,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2179:2:86"
             },
             "returnParameters": {
-              "id": 44042,
+              "id": 44077,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2189:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 44048,
+            "id": 44083,
             "nodeType": "FunctionDefinition",
             "src": "2207:60:86",
             "nodes": [],
             "body": {
-              "id": 44047,
+              "id": 44082,
               "nodeType": "Block",
               "src": "2257:10:86",
               "nodes": [],
@@ -7162,18 +7162,18 @@
             "name": "test_NA_removeLiquidity_Success",
             "nameLocation": "2216:31:86",
             "parameters": {
-              "id": 44045,
+              "id": 44080,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2247:2:86"
             },
             "returnParameters": {
-              "id": 44046,
+              "id": 44081,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2257:0:86"
             },
-            "scope": 44049,
+            "scope": 44084,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -7183,16 +7183,16 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 43734,
+              "id": 43769,
               "name": "NFTAMMTestBase",
               "nameLocations": [
                 "127:14:86"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 44573,
+              "referencedDeclaration": 44936,
               "src": "127:14:86"
             },
-            "id": 43735,
+            "id": 43770,
             "nodeType": "InheritanceSpecifier",
             "src": "127:14:86"
           }
@@ -7208,14 +7208,14 @@
           1284,
           3018,
           3566,
-          44699,
-          44885
+          45062,
+          45248
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          44049,
-          44573,
+          44084,
+          44936,
           15324,
           6210,
           6207,
@@ -7229,7 +7229,7 @@
         ],
         "name": "NFTAMMTest",
         "nameLocation": "113:10:86",
-        "scope": 44050,
+        "scope": 44085,
         "usedErrors": []
       }
     ],
