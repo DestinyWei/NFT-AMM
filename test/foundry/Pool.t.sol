@@ -178,4 +178,4 @@ contract PoolTest is Test {
         // rewards[alice] = 40 (即 earned(alice) = 40)
     }
 }
->>>>>>> bb20ce6321212c40758ffa717c2fbb146394f6a6
+
