@@ -485,7 +485,11 @@
                   "nameLocation": "587:4:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33600,
+<<<<<<< HEAD
                   "src": "571:20:36",
+=======
+                  "src": "571:20:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -513,7 +517,11 @@
                   "nameLocation": "609:17:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33600,
+<<<<<<< HEAD
                   "src": "593:33:36",
+=======
+                  "src": "593:33:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -541,7 +549,11 @@
                   "nameLocation": "644:12:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33600,
+<<<<<<< HEAD
                   "src": "628:28:36",
+=======
+                  "src": "628:28:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -592,7 +604,11 @@
                   "nameLocation": "915:4:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33609,
+<<<<<<< HEAD
                   "src": "899:20:36",
+=======
+                  "src": "899:20:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -620,7 +636,11 @@
                   "nameLocation": "937:7:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33609,
+<<<<<<< HEAD
                   "src": "921:23:36",
+=======
+                  "src": "921:23:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -649,7 +669,11 @@
                   "nameLocation": "962:6:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33609,
+<<<<<<< HEAD
                   "src": "946:22:36",
+=======
+                  "src": "946:22:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -670,6 +694,7 @@
                   "visibility": "internal"
                 }
               ],
+<<<<<<< HEAD
               "src": "898:71:36"
             }
           },
@@ -783,6 +808,121 @@
             }
           },
           {
+=======
+              "src": "898:71:35"
+            }
+          },
+          {
+            "id": 33618,
+            "nodeType": "EventDefinition",
+            "src": "1256:89:35",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 33610,
+              "nodeType": "StructuredDocumentation",
+              "src": "976:275:35",
+              "text": " @dev Emitted when `account` is revoked `role`.\n `sender` is the account that originated the contract call:\n   - if using `revokeRole`, it is the admin role bearer\n   - if using `renounceRole`, it is the role bearer (i.e. `account`)"
+            },
+            "eventSelector": "f6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b",
+            "name": "RoleRevoked",
+            "nameLocation": "1262:11:35",
+            "parameters": {
+              "id": 33617,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33612,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "role",
+                  "nameLocation": "1290:4:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33618,
+                  "src": "1274:20:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 33611,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1274:7:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33614,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "1312:7:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33618,
+                  "src": "1296:23:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33613,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1296:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33616,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "1337:6:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33618,
+                  "src": "1321:22:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33615,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1321:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1273:71:35"
+            }
+          },
+          {
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "id": 33628,
             "nodeType": "FunctionDefinition",
             "src": "1432:77:36",
@@ -801,6 +941,8 @@
             "nameLocation": "1441:7:36",
             "parameters": {
               "id": 33624,
+<<<<<<< HEAD
+=======
               "nodeType": "ParameterList",
               "parameters": [
                 {
@@ -808,10 +950,10 @@
                   "id": 33621,
                   "mutability": "mutable",
                   "name": "role",
-                  "nameLocation": "1457:4:36",
+                  "nameLocation": "1457:4:35",
                   "nodeType": "VariableDeclaration",
                   "scope": 33628,
-                  "src": "1449:12:36",
+                  "src": "1449:12:35",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -820,6 +962,130 @@
                   },
                   "typeName": {
                     "id": 33620,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1449:7:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33623,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "1471:7:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33628,
+                  "src": "1463:15:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33622,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1463:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1448:31:35"
+            },
+            "returnParameters": {
+              "id": 33627,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33626,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33628,
+                  "src": "1503:4:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 33625,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1503:4:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1502:6:35"
+            },
+            "scope": 33661,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 33636,
+            "nodeType": "FunctionDefinition",
+            "src": "1704:68:35",
+            "nodes": [],
+            "documentation": {
+              "id": 33629,
+              "nodeType": "StructuredDocumentation",
+              "src": "1515:184:35",
+              "text": " @dev Returns the admin role that controls `role`. See {grantRole} and\n {revokeRole}.\n To change a role's admin, use {AccessControl-_setRoleAdmin}."
+            },
+            "functionSelector": "248a9ca3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRoleAdmin",
+            "nameLocation": "1713:12:35",
+            "parameters": {
+              "id": 33632,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33631,
+                  "mutability": "mutable",
+                  "name": "role",
+                  "nameLocation": "1457:4:36",
+                  "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
+                  "scope": 33628,
+                  "src": "1449:12:36",
+=======
+                  "scope": 33636,
+                  "src": "1726:12:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 33630,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1449:7:36",
@@ -862,16 +1128,25 @@
               "src": "1448:31:36"
             },
             "returnParameters": {
+<<<<<<< HEAD
               "id": 33627,
+=======
+              "id": 33635,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< HEAD
                   "id": 33626,
+=======
+                  "id": 33634,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
                   "scope": 33628,
                   "src": "1503:4:36",
                   "stateVariable": false,
@@ -930,6 +1205,10 @@
                   "nodeType": "VariableDeclaration",
                   "scope": 33636,
                   "src": "1726:12:36",
+=======
+                  "scope": 33636,
+                  "src": "1763:7:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -937,7 +1216,11 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
+<<<<<<< HEAD
                     "id": 33630,
+=======
+                    "id": 33633,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1726:7:36",
@@ -951,6 +1234,7 @@
               ],
               "src": "1725:14:36"
             },
+<<<<<<< HEAD
             "returnParameters": {
               "id": 33635,
               "nodeType": "ParameterList",
@@ -985,6 +1269,8 @@
               ],
               "src": "1762:9:36"
             },
+=======
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 33661,
             "stateMutability": "view",
             "virtual": false,
@@ -1019,7 +1305,11 @@
                   "nameLocation": "2049:4:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33644,
+<<<<<<< HEAD
                   "src": "2041:12:36",
+=======
+                  "src": "2041:12:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1046,7 +1336,11 @@
                   "nameLocation": "2063:7:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33644,
+<<<<<<< HEAD
                   "src": "2055:15:36",
+=======
+                  "src": "2055:15:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1109,7 +1403,11 @@
                   "nameLocation": "2343:4:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33652,
+<<<<<<< HEAD
                   "src": "2335:12:36",
+=======
+                  "src": "2335:12:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1136,7 +1434,11 @@
                   "nameLocation": "2357:7:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33652,
+<<<<<<< HEAD
                   "src": "2349:15:36",
+=======
+                  "src": "2349:15:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1199,7 +1501,11 @@
                   "nameLocation": "2896:4:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33660,
+<<<<<<< HEAD
                   "src": "2888:12:36",
+=======
+                  "src": "2888:12:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1226,7 +1532,11 @@
                   "nameLocation": "2910:7:36",
                   "nodeType": "VariableDeclaration",
                   "scope": 33660,
+<<<<<<< HEAD
                   "src": "2902:15:36",
+=======
+                  "src": "2902:15:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1277,7 +1587,11 @@
           33661
         ],
         "name": "IAccessControlUpgradeable",
+<<<<<<< HEAD
         "nameLocation": "219:25:36",
+=======
+        "nameLocation": "219:25:35",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
         "scope": 33662,
         "usedErrors": []
       }

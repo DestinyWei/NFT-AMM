@@ -15,7 +15,10 @@ contract NFTAMMTestBase is Test {
     FT public ft;
     LPToken public lpToken;
     MyNFT public myNFT;
-    //StakingRewards public stakingRewards;
+    // StakingRewards public stakingRewards;
+
+    address public constant DAI = 0x82fb927676b53b6eE07904780c7be9b4B50dB80b;
+    address public constant USDC = 0x51fCe89b9f6D4c530698f181167043e1bB4abf89;
 
     Utils utils;
     address payable[] internal users;
@@ -28,7 +31,7 @@ contract NFTAMMTestBase is Test {
     string public SEPOLIA_RPC_URL = vm.envString("SEPOLIA_RPC_URL");
     uint256 public constant BLOCK_NUM = 3648420;
 
-    function setUp() public {
+    function _setUp() internal {
         sepoliaFork = vm.createSelectFork(SEPOLIA_RPC_URL, BLOCK_NUM);
 
         utils = new Utils();
@@ -48,6 +51,6 @@ contract NFTAMMTestBase is Test {
         ft = new FT();
         lpToken = new LPToken();
         myNFT = new MyNFT();
-        //stakingRewards = new StakingRewards(lpToken, DexToken);   
+        // stakingRewards = new StakingRewards(lpToken, DexToken);   
     }
 }

@@ -510,7 +510,11 @@
                   "nameLocation": "405:9:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36194,
+<<<<<<< HEAD
                   "src": "389:25:52",
+=======
+                  "src": "389:25:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -539,7 +543,11 @@
                   "nameLocation": "432:12:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36194,
+<<<<<<< HEAD
                   "src": "416:28:52",
+=======
+                  "src": "416:28:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -568,7 +576,11 @@
                   "nameLocation": "462:10:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36194,
+<<<<<<< HEAD
                   "src": "446:26:52",
+=======
+                  "src": "446:26:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -620,7 +632,11 @@
                   "nameLocation": "652:8:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36203,
+<<<<<<< HEAD
                   "src": "636:24:52",
+=======
+                  "src": "636:24:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -644,12 +660,14 @@
                   "constant": false,
                   "id": 36199,
                   "indexed": false,
+<<<<<<< HEAD
+=======
                   "mutability": "mutable",
                   "name": "previousBalance",
-                  "nameLocation": "670:15:52",
+                  "nameLocation": "670:15:51",
                   "nodeType": "VariableDeclaration",
                   "scope": 36203,
-                  "src": "662:23:52",
+                  "src": "662:23:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -660,7 +678,7 @@
                     "id": 36198,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "662:7:52",
+                    "src": "662:7:51",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -674,10 +692,10 @@
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "newBalance",
-                  "nameLocation": "695:10:52",
+                  "nameLocation": "695:10:51",
                   "nodeType": "VariableDeclaration",
                   "scope": 36203,
-                  "src": "687:18:52",
+                  "src": "687:18:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -686,6 +704,200 @@
                   },
                   "typeName": {
                     "id": 36200,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "687:7:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "635:71:51"
+            }
+          },
+          {
+            "id": 36211,
+            "nodeType": "FunctionDefinition",
+            "src": "797:67:51",
+            "nodes": [],
+            "documentation": {
+              "id": 36204,
+              "nodeType": "StructuredDocumentation",
+              "src": "713:79:51",
+              "text": " @dev Returns the current amount of votes that `account` has."
+            },
+            "functionSelector": "9ab24eb0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVotes",
+            "nameLocation": "806:8:51",
+            "parameters": {
+              "id": 36207,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 36206,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "823:7:51",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 36211,
+                  "src": "815:15:51",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 36205,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "815:7:51",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "814:17:51"
+            },
+            "returnParameters": {
+              "id": 36210,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 36209,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+                  "mutability": "mutable",
+                  "name": "previousBalance",
+                  "nameLocation": "670:15:52",
+                  "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
+                  "scope": 36203,
+                  "src": "662:23:52",
+=======
+                  "scope": 36211,
+                  "src": "855:7:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 36208,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "662:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+<<<<<<< HEAD
+                },
+                {
+                  "constant": false,
+                  "id": 36201,
+                  "indexed": false,
+=======
+                }
+              ],
+              "src": "854:9:51"
+            },
+            "scope": 36260,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 36221,
+            "nodeType": "FunctionDefinition",
+            "src": "1105:90:51",
+            "nodes": [],
+            "documentation": {
+              "id": 36212,
+              "nodeType": "StructuredDocumentation",
+              "src": "870:230:51",
+              "text": " @dev Returns the amount of votes that `account` had at a specific moment in the past. If the `clock()` is\n configured to use block numbers, this will return the value at the end of the corresponding block."
+            },
+            "functionSelector": "3a46b1a8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPastVotes",
+            "nameLocation": "1114:12:51",
+            "parameters": {
+              "id": 36217,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 36214,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "1135:7:51",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 36221,
+                  "src": "1127:15:51",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 36213,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1127:7:51",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 36216,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+                  "mutability": "mutable",
+                  "name": "newBalance",
+                  "nameLocation": "695:10:52",
+                  "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
+                  "scope": 36203,
+                  "src": "687:18:52",
+=======
+                  "scope": 36221,
+                  "src": "1144:17:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+<<<<<<< HEAD
+                    "id": 36200,
+=======
+                    "id": 36215,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "687:7:52",
@@ -753,18 +965,23 @@
               "src": "814:17:52"
             },
             "returnParameters": {
-              "id": 36210,
+              "id": 36220,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 36209,
+                  "id": 36219,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
                   "scope": 36211,
                   "src": "855:7:52",
+=======
+                  "scope": 36221,
+                  "src": "1186:7:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -772,7 +989,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 36208,
+                    "id": 36218,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "855:7:52",
@@ -792,12 +1009,16 @@
             "visibility": "external"
           },
           {
+<<<<<<< HEAD
             "id": 36221,
+=======
+            "id": 36229,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "nodeType": "FunctionDefinition",
             "src": "1105:90:52",
             "nodes": [],
             "documentation": {
-              "id": 36212,
+              "id": 36222,
               "nodeType": "StructuredDocumentation",
               "src": "870:230:52",
               "text": " @dev Returns the amount of votes that `account` had at a specific moment in the past. If the `clock()` is\n configured to use block numbers, this will return the value at the end of the corresponding block."
@@ -938,7 +1159,11 @@
                   "nameLocation": "1723:9:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36229,
+<<<<<<< HEAD
                   "src": "1715:17:52",
+=======
+                  "src": "1715:17:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -972,7 +1197,11 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 36229,
+<<<<<<< HEAD
                   "src": "1757:7:52",
+=======
+                  "src": "1757:7:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1028,7 +1257,11 @@
                   "nameLocation": "1875:7:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36237,
+<<<<<<< HEAD
                   "src": "1867:15:52",
+=======
+                  "src": "1867:15:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1063,7 +1296,11 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 36237,
+<<<<<<< HEAD
                   "src": "1907:7:52",
+=======
+                  "src": "1907:7:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1120,7 +1357,11 @@
                   "nameLocation": "2024:9:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36243,
+<<<<<<< HEAD
                   "src": "2016:17:52",
+=======
+                  "src": "2016:17:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1183,7 +1424,11 @@
                   "nameLocation": "2153:9:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36259,
+<<<<<<< HEAD
                   "src": "2145:17:52",
+=======
+                  "src": "2145:17:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1211,7 +1456,11 @@
                   "nameLocation": "2172:5:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36259,
+<<<<<<< HEAD
                   "src": "2164:13:52",
+=======
+                  "src": "2164:13:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1238,7 +1487,11 @@
                   "nameLocation": "2187:6:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36259,
+<<<<<<< HEAD
                   "src": "2179:14:52",
+=======
+                  "src": "2179:14:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1265,7 +1518,11 @@
                   "nameLocation": "2201:1:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36259,
+<<<<<<< HEAD
                   "src": "2195:7:52",
+=======
+                  "src": "2195:7:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1292,7 +1549,11 @@
                   "nameLocation": "2212:1:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36259,
+<<<<<<< HEAD
                   "src": "2204:9:52",
+=======
+                  "src": "2204:9:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1319,7 +1580,11 @@
                   "nameLocation": "2223:1:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 36259,
+<<<<<<< HEAD
                   "src": "2215:9:52",
+=======
+                  "src": "2215:9:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1369,7 +1634,11 @@
           36260
         ],
         "name": "IVotes",
+<<<<<<< HEAD
         "nameLocation": "278:6:52",
+=======
+        "nameLocation": "278:6:51",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
         "scope": 36261,
         "usedErrors": []
       }

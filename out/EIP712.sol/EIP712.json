@@ -366,7 +366,11 @@
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 40313,
+<<<<<<< HEAD
               "src": "1858:12:79"
+=======
+              "src": "1858:12:78"
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             }
           },
           {
@@ -377,7 +381,11 @@
             "constant": true,
             "mutability": "constant",
             "name": "_TYPE_HASH",
+<<<<<<< HEAD
             "nameLocation": "1908:10:79",
+=======
+            "nameLocation": "1908:10:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 41222,
             "stateVariable": true,
             "storageLocation": "default",
@@ -458,7 +466,11 @@
             "constant": false,
             "mutability": "immutable",
             "name": "_cachedDomainSeparator",
+<<<<<<< HEAD
             "nameLocation": "2249:22:79",
+=======
+            "nameLocation": "2249:22:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 41222,
             "stateVariable": true,
             "storageLocation": "default",
@@ -486,7 +498,11 @@
             "constant": false,
             "mutability": "immutable",
             "name": "_cachedChainId",
+<<<<<<< HEAD
             "nameLocation": "2303:14:79",
+=======
+            "nameLocation": "2303:14:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 41222,
             "stateVariable": true,
             "storageLocation": "default",
@@ -514,7 +530,11 @@
             "constant": false,
             "mutability": "immutable",
             "name": "_cachedThis",
+<<<<<<< HEAD
             "nameLocation": "2349:11:79",
+=======
+            "nameLocation": "2349:11:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 41222,
             "stateVariable": true,
             "storageLocation": "default",
@@ -543,7 +563,11 @@
             "constant": false,
             "mutability": "immutable",
             "name": "_hashedName",
+<<<<<<< HEAD
             "nameLocation": "2393:11:79",
+=======
+            "nameLocation": "2393:11:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 41222,
             "stateVariable": true,
             "storageLocation": "default",
@@ -554,6 +578,141 @@
             "typeName": {
               "id": 41040,
               "name": "bytes32",
+<<<<<<< HEAD
+=======
+              "nodeType": "ElementaryTypeName",
+              "src": "2367:7:78",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 41043,
+            "nodeType": "VariableDeclaration",
+            "src": "2410:40:78",
+            "nodes": [],
+            "constant": false,
+            "mutability": "immutable",
+            "name": "_hashedVersion",
+            "nameLocation": "2436:14:78",
+            "scope": 41222,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 41042,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "2410:7:78",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 41046,
+            "nodeType": "VariableDeclaration",
+            "src": "2457:35:78",
+            "nodes": [],
+            "constant": false,
+            "mutability": "immutable",
+            "name": "_name",
+            "nameLocation": "2487:5:78",
+            "scope": 41222,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
+              "typeString": "ShortString"
+            },
+            "typeName": {
+              "id": 41045,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 41044,
+                "name": "ShortString",
+                "nameLocations": [
+                  "2457:11:78"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 40102,
+                "src": "2457:11:78"
+              },
+              "referencedDeclaration": 40102,
+              "src": "2457:11:78",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
+                "typeString": "ShortString"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 41049,
+            "nodeType": "VariableDeclaration",
+            "src": "2498:38:78",
+            "nodes": [],
+            "constant": false,
+            "mutability": "immutable",
+            "name": "_version",
+            "nameLocation": "2528:8:78",
+            "scope": 41222,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
+              "typeString": "ShortString"
+            },
+            "typeName": {
+              "id": 41048,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 41047,
+                "name": "ShortString",
+                "nameLocations": [
+                  "2498:11:78"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 40102,
+                "src": "2498:11:78"
+              },
+              "referencedDeclaration": 40102,
+              "src": "2498:11:78",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
+                "typeString": "ShortString"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 41051,
+            "nodeType": "VariableDeclaration",
+            "src": "2542:28:78",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "_nameFallback",
+            "nameLocation": "2557:13:78",
+            "scope": 41222,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 41050,
+              "name": "string",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
               "nodeType": "ElementaryTypeName",
               "src": "2367:7:79",
               "typeDescriptions": {
@@ -564,7 +723,7 @@
             "visibility": "private"
           },
           {
-            "id": 41043,
+            "id": 41053,
             "nodeType": "VariableDeclaration",
             "src": "2410:40:79",
             "nodes": [],
@@ -674,8 +833,13 @@
             "nodes": [],
             "constant": false,
             "mutability": "mutable",
+<<<<<<< HEAD
             "name": "_nameFallback",
             "nameLocation": "2557:13:79",
+=======
+            "name": "_versionFallback",
+            "nameLocation": "2591:16:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "scope": 41222,
             "stateVariable": true,
             "storageLocation": "default",
@@ -684,7 +848,11 @@
               "typeString": "string"
             },
             "typeName": {
+<<<<<<< HEAD
               "id": 41050,
+=======
+              "id": 41052,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "2542:6:79",
@@ -696,6 +864,7 @@
             "visibility": "private"
           },
           {
+<<<<<<< HEAD
             "id": 41053,
             "nodeType": "VariableDeclaration",
             "src": "2576:31:79",
@@ -724,6 +893,8 @@
             "visibility": "private"
           },
           {
+=======
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             "id": 41111,
             "nodeType": "FunctionDefinition",
             "src": "3178:431:79",
@@ -747,7 +918,11 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 41046,
+<<<<<<< HEAD
                       "src": "3243:5:79",
+=======
+                      "src": "3243:5:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "typeDescriptions": {
                         "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
                         "typeString": "ShortString"
@@ -763,7 +938,11 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 41051,
+<<<<<<< HEAD
                           "src": "3282:13:79",
+=======
+                          "src": "3282:13:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_storage",
                             "typeString": "string storage ref"
@@ -783,7 +962,11 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 41056,
+<<<<<<< HEAD
                           "src": "3251:4:79",
+=======
+                          "src": "3251:4:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -798,9 +981,15 @@
                         "memberName": "toShortStringWithFallback",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 40254,
+<<<<<<< HEAD
                         "src": "3251:30:79",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_storage_ptr_$returns$_t_userDefinedValueType$_ShortString_$40102_$bound_to$_t_string_memory_ptr_$",
+=======
+                        "src": "3251:30:78",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_storage_ptr_$returns$_t_userDefinedValueType$_ShortString_$40102_$attached_to$_t_string_memory_ptr_$",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeString": "function (string memory,string storage pointer) returns (ShortString)"
                         }
                       },
@@ -843,7 +1032,11 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 41049,
+<<<<<<< HEAD
                       "src": "3306:8:79",
+=======
+                      "src": "3306:8:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "typeDescriptions": {
                         "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
                         "typeString": "ShortString"
@@ -859,7 +1052,11 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 41053,
+<<<<<<< HEAD
                           "src": "3351:16:79",
+=======
+                          "src": "3351:16:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_storage",
                             "typeString": "string storage ref"
@@ -879,7 +1076,11 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 41058,
+<<<<<<< HEAD
                           "src": "3317:7:79",
+=======
+                          "src": "3317:7:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -894,9 +1095,15 @@
                         "memberName": "toShortStringWithFallback",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 40254,
+<<<<<<< HEAD
                         "src": "3317:33:79",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_storage_ptr_$returns$_t_userDefinedValueType$_ShortString_$40102_$bound_to$_t_string_memory_ptr_$",
+=======
+                        "src": "3317:33:78",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_storage_ptr_$returns$_t_userDefinedValueType$_ShortString_$40102_$attached_to$_t_string_memory_ptr_$",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeString": "function (string memory,string storage pointer) returns (ShortString)"
                         }
                       },
@@ -939,7 +1146,11 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 41041,
+<<<<<<< HEAD
                       "src": "3378:11:79",
+=======
+                      "src": "3378:11:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -957,7 +1168,11 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 41056,
+<<<<<<< HEAD
                               "src": "3408:4:79",
+=======
+                              "src": "3408:4:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
@@ -1049,7 +1264,10 @@
                   },
                   "id": 41083,
                   "nodeType": "ExpressionStatement",
+<<<<<<< HEAD
                   "src": "3378:36:79"
+=======
+                  "src": "3378:36:78"
                 },
                 {
                   "expression": {
@@ -1064,7 +1282,200 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 41043,
+                      "src": "3424:14:78",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "id": 41088,
+                              "name": "version",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 41058,
+                              "src": "3457:7:78",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            ],
+                            "id": 41087,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "3451:5:78",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes_storage_ptr_$",
+                              "typeString": "type(bytes storage pointer)"
+                            },
+                            "typeName": {
+                              "id": 41086,
+                              "name": "bytes",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "3451:5:78",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 41089,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "3451:14:78",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 41085,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -8,
+                        "src": "3441:9:78",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 41090,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3441:25:78",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "3424:42:78",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 41092,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3424:42:78"
+                },
+                {
+                  "expression": {
+                    "id": 41096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 41093,
+                      "name": "_cachedChainId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41037,
+                      "src": "3477:14:78",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 41094,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -4,
+                        "src": "3494:5:78",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 41095,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "3500:7:78",
+                      "memberName": "chainid",
+                      "nodeType": "MemberAccess",
+                      "src": "3494:13:78",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "3477:30:78",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 41097,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3477:30:78"
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
+                },
+                {
+                  "expression": {
+                    "id": 41101,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+<<<<<<< HEAD
+                      "id": 41084,
+                      "name": "_hashedVersion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41043,
                       "src": "3424:14:79",
+=======
+                      "id": 41098,
+                      "name": "_cachedDomainSeparator",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41035,
+                      "src": "3517:22:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -1133,6 +1544,7 @@
                         }
                       ],
                       "expression": {
+<<<<<<< HEAD
                         "argumentTypes": [
                           {
                             "typeIdentifier": "t_bytes_memory_ptr",
@@ -1145,12 +1557,21 @@
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -8,
                         "src": "3441:9:79",
+=======
+                        "argumentTypes": [],
+                        "id": 41099,
+                        "name": "_buildDomainSeparator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 41158,
+                        "src": "3542:21:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                           "typeString": "function (bytes memory) pure returns (bytes32)"
                         }
                       },
-                      "id": 41090,
+                      "id": 41100,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1172,18 +1593,23 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 41092,
+                  "id": 41102,
                   "nodeType": "ExpressionStatement",
                   "src": "3424:42:79"
                 },
                 {
                   "expression": {
+<<<<<<< HEAD
                     "id": 41096,
+=======
+                    "id": 41108,
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
+<<<<<<< HEAD
                       "id": 41093,
                       "name": "_cachedChainId",
                       "nodeType": "Identifier",
@@ -1304,12 +1730,18 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
+=======
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "id": 41103,
                       "name": "_cachedThis",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 41039,
+<<<<<<< HEAD
                       "src": "3575:11:79",
+=======
+                      "src": "3575:11:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -1409,7 +1841,11 @@
                   "nameLocation": "3204:4:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41111,
+<<<<<<< HEAD
                   "src": "3190:18:79",
+=======
+                  "src": "3190:18:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1436,7 +1872,11 @@
                   "nameLocation": "3224:7:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41111,
+<<<<<<< HEAD
                   "src": "3210:21:79",
+=======
+                  "src": "3210:21:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1566,7 +2006,11 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 41039,
+<<<<<<< HEAD
                         "src": "3788:11:79",
+=======
+                        "src": "3788:11:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1625,7 +2069,11 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 41037,
+<<<<<<< HEAD
                         "src": "3820:14:79",
+=======
+                        "src": "3820:14:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1658,7 +2106,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41158,
+<<<<<<< HEAD
                             "src": "3917:21:79",
+=======
+                            "src": "3917:21:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes32_$",
                               "typeString": "function () view returns (bytes32)"
@@ -1702,7 +2154,11 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 41035,
+<<<<<<< HEAD
                           "src": "3857:22:79",
+=======
+                          "src": "3857:22:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -1747,7 +2203,11 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 41137,
+<<<<<<< HEAD
                   "src": "3748:7:79",
+=======
+                  "src": "3748:7:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1796,7 +2256,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41033,
+<<<<<<< HEAD
                             "src": "4065:10:79",
+=======
+                            "src": "4065:10:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -1808,7 +2272,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41041,
+<<<<<<< HEAD
                             "src": "4077:11:79",
+=======
+                            "src": "4077:11:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -1820,7 +2288,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41043,
+<<<<<<< HEAD
                             "src": "4090:14:79",
+=======
+                            "src": "4090:14:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -2041,7 +2513,11 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 41158,
+<<<<<<< HEAD
                   "src": "4018:7:79",
+=======
+                  "src": "4018:7:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2091,7 +2567,11 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 41137,
+<<<<<<< HEAD
                           "src": "4893:18:79",
+=======
+                          "src": "4893:18:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view returns (bytes32)"
@@ -2119,7 +2599,11 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 41161,
+<<<<<<< HEAD
                         "src": "4915:10:79",
+=======
+                        "src": "4915:10:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -2143,7 +2627,11 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 41018,
+<<<<<<< HEAD
                         "src": "4871:5:79",
+=======
+                        "src": "4871:5:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_contract$_ECDSA_$41018_$",
                           "typeString": "type(library ECDSA)"
@@ -2158,7 +2646,11 @@
                       "memberName": "toTypedDataHash",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 40997,
+<<<<<<< HEAD
                       "src": "4871:21:79",
+=======
+                      "src": "4871:21:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes32_$_t_bytes32_$returns$_t_bytes32_$",
                         "typeString": "function (bytes32,bytes32) pure returns (bytes32)"
@@ -2210,7 +2702,11 @@
                   "nameLocation": "4802:10:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41174,
+<<<<<<< HEAD
                   "src": "4794:18:79",
+=======
+                  "src": "4794:18:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2244,7 +2740,11 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 41174,
+<<<<<<< HEAD
                   "src": "4845:7:79",
+=======
+                  "src": "4845:7:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2309,7 +2809,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41051,
+<<<<<<< HEAD
                             "src": "5454:13:79",
+=======
+                            "src": "5454:13:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_storage",
                               "typeString": "string storage ref"
@@ -2329,7 +2833,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41046,
+<<<<<<< HEAD
                             "src": "5427:5:79",
+=======
+                            "src": "5427:5:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
                               "typeString": "ShortString"
@@ -2344,9 +2852,15 @@
                           "memberName": "toStringWithFallback",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 40281,
+<<<<<<< HEAD
                           "src": "5427:26:79",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_ShortString_$40102_$_t_string_storage_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_userDefinedValueType$_ShortString_$40102_$",
+=======
+                          "src": "5427:26:78",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_ShortString_$40102_$_t_string_storage_ptr_$returns$_t_string_memory_ptr_$attached_to$_t_userDefinedValueType$_ShortString_$40102_$",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeString": "function (ShortString,string storage pointer) pure returns (string memory)"
                           }
                         },
@@ -2374,7 +2888,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41053,
+<<<<<<< HEAD
                             "src": "5512:16:79",
+=======
+                            "src": "5512:16:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_storage",
                               "typeString": "string storage ref"
@@ -2394,7 +2912,11 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 41049,
+<<<<<<< HEAD
                             "src": "5482:8:79",
+=======
+                            "src": "5482:8:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeDescriptions": {
                               "typeIdentifier": "t_userDefinedValueType$_ShortString_$40102",
                               "typeString": "ShortString"
@@ -2409,9 +2931,15 @@
                           "memberName": "toStringWithFallback",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 40281,
+<<<<<<< HEAD
                           "src": "5482:29:79",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_ShortString_$40102_$_t_string_storage_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_userDefinedValueType$_ShortString_$40102_$",
+=======
+                          "src": "5482:29:78",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_ShortString_$40102_$_t_string_storage_ptr_$returns$_t_string_memory_ptr_$attached_to$_t_userDefinedValueType$_ShortString_$40102_$",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                             "typeString": "function (ShortString,string storage pointer) pure returns (string memory)"
                           }
                         },
@@ -2709,7 +3237,11 @@
                   "nameLocation": "5143:6:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5136:13:79",
+=======
+                  "src": "5136:13:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2736,7 +3268,11 @@
                   "nameLocation": "5177:4:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5163:18:79",
+=======
+                  "src": "5163:18:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2763,7 +3299,11 @@
                   "nameLocation": "5209:7:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5195:21:79",
+=======
+                  "src": "5195:21:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2790,7 +3330,11 @@
                   "nameLocation": "5238:7:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5230:15:79",
+=======
+                  "src": "5230:15:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2817,7 +3361,11 @@
                   "nameLocation": "5267:17:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5259:25:79",
+=======
+                  "src": "5259:25:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2845,7 +3393,11 @@
                   "nameLocation": "5306:4:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5298:12:79",
+=======
+                  "src": "5298:12:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2872,7 +3424,11 @@
                   "nameLocation": "5341:10:79",
                   "nodeType": "VariableDeclaration",
                   "scope": 41221,
+<<<<<<< HEAD
                   "src": "5324:27:79",
+=======
+                  "src": "5324:27:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2920,7 +3476,11 @@
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 36285,
+<<<<<<< HEAD
               "src": "1837:8:79"
+=======
+              "src": "1837:8:78"
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
             },
             "id": 41026,
             "nodeType": "InheritanceSpecifier",
@@ -2942,7 +3502,11 @@
           36285
         ],
         "name": "EIP712",
+<<<<<<< HEAD
         "nameLocation": "1827:6:79",
+=======
+        "nameLocation": "1827:6:78",
+>>>>>>> 91338a712569f415152602a22ba25030c39fce08
         "scope": 41223,
         "usedErrors": [
           40110,
